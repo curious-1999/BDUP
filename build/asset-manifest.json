@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/BDUP/static/css/main.211b70cb.chunk.css",
+    "main.js": "/BDUP/static/js/main.f11133d4.chunk.js",
+    "main.js.map": "/BDUP/static/js/main.f11133d4.chunk.js.map",
+    "runtime-main.js": "/BDUP/static/js/runtime-main.d70145c4.js",
+    "runtime-main.js.map": "/BDUP/static/js/runtime-main.d70145c4.js.map",
+    "static/css/2.1ab7ba5a.chunk.css": "/BDUP/static/css/2.1ab7ba5a.chunk.css",
+    "static/js/2.d1fea4fc.chunk.js": "/BDUP/static/js/2.d1fea4fc.chunk.js",
+    "static/js/2.d1fea4fc.chunk.js.map": "/BDUP/static/js/2.d1fea4fc.chunk.js.map",
+    "index.html": "/BDUP/index.html",
+    "static/css/2.1ab7ba5a.chunk.css.map": "/BDUP/static/css/2.1ab7ba5a.chunk.css.map",
+    "static/css/main.211b70cb.chunk.css.map": "/BDUP/static/css/main.211b70cb.chunk.css.map",
+    "static/js/2.d1fea4fc.chunk.js.LICENSE.txt": "/BDUP/static/js/2.d1fea4fc.chunk.js.LICENSE.txt",
+    "static/media/Bizzd.ade4517c.webp": "/BDUP/static/media/Bizzd.ade4517c.webp",
+    "static/media/themes.scss": "/BDUP/static/media/bg-5.d0c7cf07.png",
+    "static/media/bg-1.f6776047.jpg": "/BDUP/static/media/bg-1.f6776047.jpg",
+    "static/media/bg-2.d9183a24.jpg": "/BDUP/static/media/bg-2.d9183a24.jpg",
+    "static/media/img-1.682df50a.png": "/BDUP/static/media/img-1.682df50a.png",
+    "static/media/img-1.ba35b55b.png": "/BDUP/static/media/img-1.ba35b55b.png",
+    "static/media/img-1.e30e59bf.png": "/BDUP/static/media/img-1.e30e59bf.png",
+    "static/media/img-2.6652ab3d.png": "/BDUP/static/media/img-2.6652ab3d.png",
+    "static/media/img-2.b07fc20e.png": "/BDUP/static/media/img-2.b07fc20e.png",
+    "static/media/img-2.d826221a.png": "/BDUP/static/media/img-2.d826221a.png",
+    "static/media/img-3.6197039c.png": "/BDUP/static/media/img-3.6197039c.png",
+    "static/media/img-3.9d65cfb9.png": "/BDUP/static/media/img-3.9d65cfb9.png",
+    "static/media/img-3.dc2e6497.png": "/BDUP/static/media/img-3.dc2e6497.png",
+    "static/media/img-4.0e339563.png": "/BDUP/static/media/img-4.0e339563.png",
+    "static/media/img-4.3352f7f1.png": "/BDUP/static/media/img-4.3352f7f1.png",
+    "static/media/img-4.cffe18ef.png": "/BDUP/static/media/img-4.cffe18ef.png",
+    "static/media/logo-dark.4272faac.png": "/BDUP/static/media/logo-dark.4272faac.png",
+    "static/media/logo-light.85c171f8.png": "/BDUP/static/media/logo-light.85c171f8.png",
+    "static/media/materialdesignicons.min.css": "/BDUP/static/media/materialdesignicons-webfont.b70068f2.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d70145c4.js",
+    "static/css/2.1ab7ba5a.chunk.css",
+    "static/js/2.d1fea4fc.chunk.js",
+    "static/css/main.211b70cb.chunk.css",
+    "static/js/main.f11133d4.chunk.js"
+  ]
+}
