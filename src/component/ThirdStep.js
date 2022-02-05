@@ -8,11 +8,13 @@ import Swal from 'sweetalert2';
 import { BASE_API_URL } from '../utils/constants';
 import ToggleButton from "react-bootstrap/ToggleButton";
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
+import {Multiselselect} from 'multiselect-react-dropdown';  
+import Select from "react-select";
 
 
 const ThirdStep = (props) => {
-  const [value, setValue] = useState([]);
-  const [valueH, setValueH] = useState([]);
+  var [value, getValue] = useState();
+  var [valueH, getValueH] = useState();
   const [disable, setdisable] = useState(false);
   const [disableH, setdisableH] = useState(false);
   const [isLoading, setIsLoading] = useState(false); 
@@ -26,34 +28,34 @@ const ThirdStep = (props) => {
     }
   });
 
-  let skills = [
-    {
-      id: 1 ,
-      name: 'Cpp',
-      select: false
-    },
-    {
-      id: 2 ,
-      name: 'Management',
-      select: false
-    },
-    {
-      id: 3,
-      name: 'Development',
-      select: false
-    },
-    {
-      id: 4 ,
-      name: 'Frontend',
-      select: false
-    },
-    {
-      id: 5 ,
-      name: 'Backend',
-      select: false
-    },
+  // let skills = [
+  //   {
+  //     id: 1 ,
+  //     name: 'Cpp',
+  //     select: false
+  //   },
+  //   {
+  //     id: 2 ,
+  //     name: 'Management',
+  //     select: false
+  //   },
+  //   {
+  //     id: 3,
+  //     name: 'Development',
+  //     select: false
+  //   },
+  //   {
+  //     id: 4 ,
+  //     name: 'Frontend',
+  //     select: false
+  //   },
+  //   { 
+  //     id: 5 ,
+  //     name: 'Backend',
+  //     select: false
+  //   },
 
-  ];
+  // ];
 
   let startup_age = [
     {
@@ -78,6 +80,29 @@ const ThirdStep = (props) => {
     },
 
   ];
+
+
+  let skills = [
+    {
+      value: 1 ,
+      label: 'Cpp',
+    },
+    {
+      value: 2,
+      label: 'Management',
+    },
+    {
+      value: 3,
+      label: 'Development',
+    },
+    {
+      value: 4 ,
+      label: 'Frontend',
+    },
+    { 
+      value: 5 ,
+      label: 'Backend',
+    },];
 
   useEffect(() => {
     const getstartup_age = async () => {
@@ -149,20 +174,21 @@ const ThirdStep = (props) => {
       }
     }
   };
-  const handleChange = val => { 
+  var handleChange = val => { 
 
 
-    setValue(val) ; 
-    let state = (value.length > 2) ? true : false ; 
+    getValue(Array.isArray(val)?val.map(x=>x.label):[]) ; 
+    // let state = (value.length > 2) ? true : false ; 
     // setdisable(state) ; 
-    console.log(value) ; 
+    console.log(val) ;    
   };
 
   const handleChangeH = val => {
-    let state = (valueH.length > 2) ? true : false ; 
-    // setdisableH(state) ; 
-    setValueH(val) ; 
+    getValueH(Array.isArray(val)?val.map(x=>x.label):[]) ;
+    console.log(val) ;
   };
+
+  const [options] = useState(skills);
 
   return (
     <Form className="input-form" onSubmit={handleSubmit}>
@@ -210,24 +236,31 @@ const ThirdStep = (props) => {
 
         <Form.Group controlId="skills">
           <Form.Label>Skills want</Form.Label>
-          <ToggleButtonGroup type="checkbox" value={value} onChange={handleChange} defaultValue={[1,3]}>
-        {skills.map(
-            ({id, name}) => (
-              <ToggleButton disabled = {disable} variant="primary"  value={id}>{name}</ToggleButton>
-          ))}
+
+
+          {/* <ToggleButtonGroup type="checkbox" value={value} onChange={handleChange}> */}
+        {/* {skills.map( */}
+            {/* ({id, name}) => ( */}
+              {/* <ToggleButton disabled = {disable} variant="danger"  id = 'tbg-btn-${id}' value={id}>{name}</ToggleButton> */}
+          {/* ))} */}
           {/* id = 'tbg-btn-${id}' */}
-        </ToggleButtonGroup>
+        {/* </ToggleButtonGroup> */}
+        {/* {skills.map(
+          ({id, name}) => ( */}
+            <Select isMulti options={skills} className="Msel" onChange={handleChange}></Select>
+          {/* // ))} */}
+
         </Form.Group>
 
         <Form.Group controlId="skillsH">
           <Form.Label>Skills has</Form.Label>
-          <ToggleButtonGroup type="checkbox" value={valueH} onChange={handleChangeH}>
-        {skills.map(
-            ({id, name}) => (
-              <ToggleButton disabled = {disableH} variant="primary"  value={id}>{name}</ToggleButton>
-          ))}
+          {/* <ToggleButtonGroup type="checkbox" value={valueH} onChange={handleChangeH}> */}
+        {/* {skills.map( */}
+            {/* ({id, name}) => ( */}
+            <Select isMulti options={skills} className="Msel" onChange={handleChangeH}></Select>
+          {/* ))} */}
            {/* id = "tbg-btn-${id}" */}
-        </ToggleButtonGroup>
+        {/* </ToggleButtonGroup> */}
         </Form.Group>
 
 
