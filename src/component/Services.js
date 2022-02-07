@@ -9,6 +9,33 @@ export default class Services extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      
+      counters: [
+        {
+          id: '1',
+          extraclass: '',
+          start: 25,
+          end: 49,
+          title: "Employees",
+          description: 'Aliquam egestas vehicula sapien cibus sit amet rutrum dolor molestie.'
+        },
+        {
+          id: '2',
+          extraclass: 'pt-3',
+          start: 25,
+          end: 76,
+          title: "Projects",
+          description: 'Pellentesque habitant morbi malesuada fames ac turpis egestas.'
+        },
+        {
+          id: '3',
+          extraclass: 'pt-3',
+          start: 25,
+          end: 99,
+          title: "CLIENTS",
+          description: 'Suspendisse congue risus consequat sapien potitor risus tincidunt.'
+        },
+      ],
       services: [
         {
           id: 'service1',
@@ -41,32 +68,6 @@ export default class Services extends Component {
           description: 'You just got yourself a co-founder!'
         },
       ],
-      counters: [
-        {
-          id: '1',
-          extraclass: '',
-          start: 25,
-          end: 49,
-          title: "Employees",
-          description: 'Aliquam egestas vehicula sapien cibus sit amet rutrum dolor molestie.'
-        },
-        {
-          id: '2',
-          extraclass: 'pt-3',
-          start: 25,
-          end: 76,
-          title: "Projects",
-          description: 'Pellentesque habitant morbi malesuada fames ac turpis egestas.'
-        },
-        {
-          id: '3',
-          extraclass: 'pt-3',
-          start: 25,
-          end: 99,
-          title: "CLIENTS",
-          description: 'Suspendisse congue risus consequat sapien potitor risus tincidunt.'
-        },
-      ],
     };
   }
 
@@ -78,10 +79,9 @@ export default class Services extends Component {
             <Row>
               <Col lg="12">
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4">Provide Awesome Services </h3>
-                  <p className="text-muted f-17 mt-3">Vivamus ac nulla ultrices laoreet neque mollis mi morbi
-                  elementum mauris
-                            sit amet arcu <br /> fringilla auctor In eleifend maximus nisi sed vulputate.</p>
+                  <h3 className="title-heading mt-4"></h3>
+                  <p className="text-muted f-17 mt-3">FIND YOUR PERFECT CO-FOUNDER. IT’S THAT EASY!<br /> WANT TO INVEST IN YOUR FAVORITE STARTUP? KEEP SCROLLING!
+</p>
 
                   <img src={HomeUrl} height="15" className="mt-3" alt="" />
                 </div>
@@ -110,15 +110,14 @@ export default class Services extends Component {
             <Row className="align-items-center mt-5 pt-4" id="counter">
               <Col lg={6}>
                 <div className="pr-4 mt-4">
-                  <p className="text-uppercase">why choose us </p>
-                  <h3>Boots Your Website Thamza!</h3>
-                  <p className="text-muted mt-3">Morbi at erat et tortor tempor sodales non eu lacus Donec at gravida
-                  nunc vitae volutpat libero fusce sit amet mi quis ipsum tempus
-                  gravida in quis felis Aliquam fringilla tempus scelerisque Phasellus viverra tincidunt
-                  suscipit. Praesent non arcu vitae augue
-                            aliquam eget vitae Pellentesque sem mauris porta eget ultrices eros.</p>
+                  <p className="text-uppercase">About BizDateUp</p>
+                  <h3>Two Perspective, One spot!</h3>
+                  <p className="text-muted mt-3">Say Hello to an AI-based algorithm that lets you connect with Co-founders, Investors, and real-world startups solutions. 
+
+THE ONLY ALGORITHM THAT HELPS YOU FIND CO-FOUNDERS, INVESTORS AND SERVICES THAT YOUR STARTUP NEEDS. POWERED WITH AI*
+</p>
                   <div className="mt-4 pt-1">
-                    <Link to="#" className="btn btn-outline-primary">Discover More</Link>
+                    <Link to="#" className="btn btn-outline-primary">Read more</Link>
                   </div>
                 </div>
               </Col>
