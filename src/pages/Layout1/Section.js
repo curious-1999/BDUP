@@ -32,14 +32,12 @@ class Section extends Component {
                 <Row className="align-items-center">
                   <Col lg={6}>
                     <div className="home-content">
-                      <p className="mb-0">Digital Marketing</p>
+                      <p className="mb-0">Business Dating & Investing</p>
                       <img src={HomeUrl} height="15" alt="" />
-                      <h1 className="home-title mt-4">Grow Your <br /> Business Google Ads & Instagram Ads</h1>
-                      <p className="text-muted mt-4 f-20">Vestibulum egestas magna ut aliquet sodales nunc
-                      fermentum ligula
-                                    quis tidunt vitae massa.</p>
+                      <h1 className="home-title mt-4">Matching <br /> Founder and Co-Founder & Fund Raising</h1>
+                      <p className="text-muted mt-4 f-20">One-stop solution to connect with a Co-founder, get support, and raise funds for your start-up.</p>
                       <div className="mt-4 pt-2">
-                        <Link to="#" className="btn btn-primary mr-3">Contact Us</Link>{" "}
+                        <Link to="#" className="btn btn-primary mr-3">Invest Now</Link>{" "}
                         <Link to="#" className="video-play-icon text-dark" onClick={this.openModal}><i className="mdi mdi-play-circle-outline text-dark mr-2"></i>Watch Intro Video</Link>
                       </div>
                     </div>
