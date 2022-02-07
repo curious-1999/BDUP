@@ -3,7 +3,7 @@ import Progress from './Progress';
 
 const Header = () => (
   <div>
-    <h1>Bizzdateup signUP</h1>
+    <h1>Signup</h1>
     <Progress />
   </div>
 );

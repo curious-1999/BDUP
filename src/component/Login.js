@@ -94,7 +94,7 @@ const Login = ()=>{
   return(
     <>
     {/* <Navbar/> */}
-    <h1>Please Login</h1>
+    <h1>Login here to get Started</h1>
     <Logins/>
     </>
       
