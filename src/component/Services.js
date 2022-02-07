@@ -13,20 +13,32 @@ export default class Services extends Component {
         {
           id: 'service1',
           icon: 'mdi-google',
-          title: "Google Ads",
-          description: "Quisque rhoncus lectus ut lectus hendrerit at convallis lorem ornare pellentesque lobortis hendrerit mattis."
+          title: "Signup and get started",
+          description: "Create a profile and answer a questionnaire based on your skills. "
         },
         {
           id: 'service2',
           icon: 'mdi-instagram',
-          title: "Instagram Ads",
-          description: 'Vestibulum eu tortor artett tortor rhoncus porta quis on metus morbi comodo nisi vitae neque aliquam aliquam.'
+          title: "Select Skills",
+          description: 'Choose specific keywords that highlight your expertise.'
         },
         {
           id: 'service3',
           icon: 'mdi-youtube',
-          title: "Youtube Ads",
-          description: 'Aliquam dictum mollis sem sed hendrerit tempus sed class aptent taciti sociosqu litora conubia himenaeos.'
+          title: "Enter your preferences",
+          description: 'Select keywords based on what you are looking for in your next co-founder.'
+        },
+        {
+          id: 'service2',
+          icon: 'mdi-instagram',
+          title: "AI takes charge",
+          description: 'Our AI-based algorithm takes in your preferences and finds the ideal match.'
+        },
+        {
+          id: 'service2',
+          icon: 'mdi-instagram',
+          title: "They said Yes!",
+          description: 'You just got yourself a co-founder!'
         },
       ],
       counters: [
