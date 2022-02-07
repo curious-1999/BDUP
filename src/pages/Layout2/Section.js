@@ -34,11 +34,11 @@ class Section extends Component {
                 <Row className="justify-content-center">
                   <Col lg={9}>
                     <div className="home-content text-center">
-                      <p className="mb-0 text-white">Digital Marketing</p>
-                      <img src={HomeUrl} height="15" alt="" />
-                      <h1 className="mt-4 pt-3 home-title text-white">Make your Site Amazing & Unique with <span className="element text-primary" data-elements="Thamza"><Typewriter
+                      {/* <p className="mb-0 text-white">About Us</p> */}
+                      {/* <img src={HomeUrl} height="15" alt="" /> */}
+                      <h1 className="mt-4 pt-3 home-title text-white"><span className="element text-primary" data-elements="Thamza"><Typewriter
                               options={{
-                                strings: ['Thamza'],
+                                strings: ['About Us'],
                                 autoStart: true,
                                 loop: true,
                               }}

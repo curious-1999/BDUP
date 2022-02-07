@@ -10,18 +10,33 @@ import Team from "../../component/Team";
 import Clients from "../../component/Clients";
 import Contact from "../../component/Contact";
 import Footer from "../../component/Footer/Footer";
+import ReactPlayer from "react-player";
+import { Col, Container, Row } from "reactstrap";
+const Youtube = () => {
+  return (
+  <section className="section bg-services" id="services">
+  <Container>
+                <div className="title-box text-center">
+                <ReactPlayer width = "100%" height = "600px" controls = "true"
+                          url="https://www.youtube.com/watch?v=UVCP4bKy9Iw"
+                />
+                </div>
+    </Container>
+ </section>
+  );
+}
 
 class Layout3 extends Component {
   constructor(props) {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "home", navheading: "Home" },
-        { id: 3, idnm: "services", navheading: "Services" },
-        { id: 4, idnm: "pricing", navheading: "Pricing" },
-        { id: 5, idnm: "team", navheading: "Team" },
-        { id: 6, idnm: "clients", navheading: "Clients" },
-        { id: 7, idnm: "contact", navheading: "Contact" },
+        // { id: 1, idnm: "home", navheading: "Home" },
+        // { id: 3, idnm: "services", navheading: "Services" },
+        // { id: 4, idnm: "pricing", navheading: "Pricing" },
+        // { id: 5, idnm: "team", navheading: "Team" },
+        // { id: 6, idnm: "clients", navheading: "Clients" },
+        // { id: 7, idnm: "contact", navheading: "Contact" },
       ],
       pos: document.documentElement.scrollTop,
       imglight: false,
@@ -61,6 +76,8 @@ class Layout3 extends Component {
           {/* Importing Section */}
           <Section />
 
+          <Youtube/>
+
            {/* Importing Service */}
            <Services />
 
@@ -68,10 +85,10 @@ class Layout3 extends Component {
           <Pricing />
 
           {/* Importing Team */}
-          <Team />
+          {/* <Team /> */}
 
           {/* Importing Clients */}
-          <Clients />
+          {/* <Clients /> */}
 
           {/* Importing Contact Us */}
           <Contact />
