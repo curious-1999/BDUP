@@ -9,26 +9,7 @@ export default class Services extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      services: [
-        {
-          id: 'service1',
-          icon: 'mdi-google',
-          title: "Google Ads",
-          description: "Quisque rhoncus lectus ut lectus hendrerit at convallis lorem ornare pellentesque lobortis hendrerit mattis."
-        },
-        {
-          id: 'service2',
-          icon: 'mdi-instagram',
-          title: "Instagram Ads",
-          description: 'Vestibulum eu tortor artett tortor rhoncus porta quis on metus morbi comodo nisi vitae neque aliquam aliquam.'
-        },
-        {
-          id: 'service3',
-          icon: 'mdi-youtube',
-          title: "Youtube Ads",
-          description: 'Aliquam dictum mollis sem sed hendrerit tempus sed class aptent taciti sociosqu litora conubia himenaeos.'
-        },
-      ],
+      
       counters: [
         {
           id: '1',
@@ -55,6 +36,38 @@ export default class Services extends Component {
           description: 'Suspendisse congue risus consequat sapien potitor risus tincidunt.'
         },
       ],
+      services: [
+        {
+          id: 'service1',
+          icon: 'mdi-google',
+          title: "Signup and get started",
+          description: "Create a profile and answer a questionnaire based on your skills. "
+        },
+        {
+          id: 'service2',
+          icon: 'mdi-instagram',
+          title: "Select Skills",
+          description: 'Choose specific keywords that highlight your expertise.'
+        },
+        {
+          id: 'service3',
+          icon: 'mdi-youtube',
+          title: "Enter your preferences",
+          description: 'Select keywords based on what you are looking for in your next co-founder.'
+        },
+        {
+          id: 'service2',
+          icon: 'mdi-instagram',
+          title: "AI takes charge",
+          description: 'Our AI-based algorithm takes in your preferences and finds the ideal match.'
+        },
+        {
+          id: 'service2',
+          icon: 'mdi-instagram',
+          title: "They said Yes!",
+          description: 'You just got yourself a co-founder!'
+        },
+      ],
     };
   }
 
@@ -66,10 +79,9 @@ export default class Services extends Component {
             <Row>
               <Col lg="12">
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4">Provide Awesome Services </h3>
-                  <p className="text-muted f-17 mt-3">Vivamus ac nulla ultrices laoreet neque mollis mi morbi
-                  elementum mauris
-                            sit amet arcu <br /> fringilla auctor In eleifend maximus nisi sed vulputate.</p>
+                  <h3 className="title-heading mt-4"></h3>
+                  <p className="text-muted f-17 mt-3">FIND YOUR PERFECT CO-FOUNDER. IT’S THAT EASY!<br /> WANT TO INVEST IN YOUR FAVORITE STARTUP? KEEP SCROLLING!
+</p>
 
                   <img src={HomeUrl} height="15" className="mt-3" alt="" />
                 </div>
@@ -98,15 +110,14 @@ export default class Services extends Component {
             <Row className="align-items-center mt-5 pt-4" id="counter">
               <Col lg={6}>
                 <div className="pr-4 mt-4">
-                  <p className="text-uppercase">why choose us </p>
-                  <h3>Boots Your Website Thamza!</h3>
-                  <p className="text-muted mt-3">Morbi at erat et tortor tempor sodales non eu lacus Donec at gravida
-                  nunc vitae volutpat libero fusce sit amet mi quis ipsum tempus
-                  gravida in quis felis Aliquam fringilla tempus scelerisque Phasellus viverra tincidunt
-                  suscipit. Praesent non arcu vitae augue
-                            aliquam eget vitae Pellentesque sem mauris porta eget ultrices eros.</p>
+                  <p className="text-uppercase">About BizDateUp</p>
+                  <h3>Two Perspective, One spot!</h3>
+                  <p className="text-muted mt-3">Say Hello to an AI-based algorithm that lets you connect with Co-founders, Investors, and real-world startups solutions. 
+
+THE ONLY ALGORITHM THAT HELPS YOU FIND CO-FOUNDERS, INVESTORS AND SERVICES THAT YOUR STARTUP NEEDS. POWERED WITH AI*
+</p>
                   <div className="mt-4 pt-1">
-                    <Link to="#" className="btn btn-outline-primary">Discover More</Link>
+                    <Link to="#" className="btn btn-outline-primary">Read more</Link>
                   </div>
                 </div>
               </Col>
