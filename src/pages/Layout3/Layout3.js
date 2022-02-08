@@ -15,7 +15,7 @@ import { Col, Container, Row } from "reactstrap";
 const Youtube = () => {
   return (
   <section className="section bg-services" id="services">
-  <Container>
+  <Container >
                 <div className="title-box text-center">
                 <ReactPlayer width = "100%" height = "600px" controls = "true"
                           url="https://www.youtube.com/watch?v=UVCP4bKy9Iw"

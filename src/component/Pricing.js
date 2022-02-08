@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import { Col, Container, Row } from "reactstrap";
+import { Col, Container, Row, Badge} from "reactstrap";
 import { Link } from "react-router-dom";
+import Card from 'react-bootstrap/Card' ; 
+import Button from 'react-bootstrap/Button' ; 
 
 //import images
 import Img1 from '../assets/images/features/img-1.png';
 import HomeUrl from '../assets/images/home-border.png';
+import img from '../assets/images/users/img-1.png' ; 
 
 export default class Pricing extends Component {
   constructor(props) {
@@ -14,49 +17,39 @@ export default class Pricing extends Component {
         {
           id: 1,
           title: "Starter",
+          img: img,
           description: 'Semper urna veal tempus pharetra elit habisse platea dictumst.',
           icon: 'mdi-account',
           titlePrimary: false,
-          regularprice: '$9.99',
-          saleprice: '$8.99',
-          pricingTag: false,
-          child: [
-            { btitle: 'Unlimited', title: "Target Audience", icon: "mdi-checkbox-marked-circle text-success" },
-            { btitle: '1', title: "User Account", icon: "mdi-checkbox-marked-circle text-success" },
-            { btitle: '100+', title: "Video Tuts", icon: "mdi-close-circle text-danger" },
-            { btitle: 'Public', title: "Displays", icon: "mdi-close-circle text-danger" },
+          percentageRaised: '$9.99',
+          tag: [
+            "fintech","blockchain"
           ],
         },
         {
           id: 2,
           title: "Personal",
+          img: img,
           titlePrimary: true,
           description: 'Semper urna veal tempus pharetra elit habisse platea dictumst.',
           icon: 'mdi-account-multiple text-primary',
-          regularprice: '$19.99',
-          saleprice: '$18.99',
+          percentageRaised: '20', 
           pricingTag: true,
-          child: [
-            { btitle: 'Unlimited', title: "Target Audience", icon: "mdi-checkbox-marked-circle text-success" },
-            { btitle: '1', title: "User Account", icon: "mdi-checkbox-marked-circle text-success" },
-            { btitle: '100+', title: "Video Tuts", icon: "mdi-close-circle text-success" },
-            { btitle: 'Public', title: "Displays", icon: "mdi-close-circle text-danger" },
+          tag: [
+            "fintech","blockchain"
           ],
         },
         {
           id: 3,
           title: "Ultimate",
+          img: img,
           description: 'Semper urna veal tempus pharetra elit habisse platea dictumst.',
           titlePrimary: false,
           icon: 'mdi-account-multiple-plus',
-          regularprice: '$29.99',
-          saleprice: '$28.99',
+          percentageRaised: '20', 
           pricingTag: false,
-          child: [
-            { btitle: 'Unlimited', title: "Target Audience", icon: "mdi-checkbox-marked-circle text-success" },
-            { btitle: '1', title: "User Account", icon: "mdi-checkbox-marked-circle text-success" },
-            { btitle: '100+', title: "Video Tuts", icon: "mdi-close-circle text-success" },
-            { btitle: 'Public', title: "Displays", icon: "mdi-close-circle text-success" },
+          tag: [
+            "fintech","blockchain","fintech","blockchain","fintech","blockchain",
           ],
         },
       ],
@@ -98,7 +91,7 @@ export default class Pricing extends Component {
             <Row>
               <Col lg={12}>
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4">Best Pricing Package </h3>
+                  <h3 className="title-heading mt-4">Listed startups... </h3>
                   <p className="text-muted f-17 mt-3">Vivamus ac nulla ultrices laoreet neque mollis mi morbi
                   elementum mauris
                             sit amet arcu <br /> fringilla auctor In eleifend maximus nisi sed vulputate.</p>
@@ -106,11 +99,11 @@ export default class Pricing extends Component {
                 </div>
               </Col>
             </Row>
-            <Row className="mt-5 pt-4">
               {/* Render Pricing items */}
+              <Row xs = "3"> 
               {this.state.pricing.map((item, key) => (
-                <Col lg="4" key={key}>
-                  <div className="pricing-box mt-4">
+                <Col key={key}>
+                  {/* <div className="pricing-box mt-4">
                     {item.pricingTag && (
                       <div className="pricing-badge"><span className="badge">Featured</span> </div>
                     )}
@@ -136,9 +129,34 @@ export default class Pricing extends Component {
                       <p className="text-muted mb-0">Per Month</p>
                     </div>
                     <div className="mt-4 pt-3">
-                      <Link to="#" className="btn btn-primary btn-rounded">Purchase Now</Link>
+                      <Link to="#" className="btn btn-primary btn-rounded">Read More</Link>
                     </div>
-                  </div>
+                  </div> */}
+                  <Card>
+                    <Card.Img variant="top" src={item.img} />
+                    <Card.Body>
+                      <Card.Title>{item.title}</Card.Title>
+                      <Card.Text>
+                       { item.description }
+                      </Card.Text>
+                      <div > 
+                      <i>Tags:</i>
+                      {item.tag.map(
+                        (t) => {
+                          return ( 
+                            <>
+                            <i>
+                            <Badge color="success">{t}</Badge>
+                            {' '}
+                            </i>
+                            </>
+                          ) ; 
+                        }
+                      )}
+                      </div>
+                      <Button variant="outline-primary">Read more</Button>
+                    </Card.Body>
+                  </Card>
                 </Col>
               ))}
             </Row>
