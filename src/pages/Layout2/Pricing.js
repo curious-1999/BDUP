@@ -59,7 +59,7 @@ export default class Pricing extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section bg-light bg-features">
+        <section className="section bg-light">
           <Container>
             <Row className="align-items-center">
               <Col lg={5}>
@@ -71,7 +71,7 @@ export default class Pricing extends Component {
               </Col>
               <Col lg={6} className="offset-lg-1">
                 <div className="mt-4">
-                  <h2>Team Collaboration in real time</h2>
+                  <h2>Founder</h2>
                   <p className="mt-4 text-muted">Praesent ut tincidunt massa vel facilisis dui Integer mattis quis
                   augue in rhoncus Integer mattis enim vel eros bibendum egestas id laoreet nisi
                   Praesent malesuada eros at bibendum eleifend Nam nec urna hendrerit interdum risus
@@ -86,15 +86,16 @@ export default class Pricing extends Component {
             </Row>
           </Container>
         </section>
-        <section style={{
+        {/* <section style={{
           margin: "50px"
-        }}></section>
-        <section className="section bg-light" style={{borderRadius: "0px 0px 0px 350px"}}>
+        }}></section> */}
+        {/* style={{borderRadius: "0px 0px 0px 350px"}} */}
+        <section className="section bg-light">
           <Container>
             <Row className="align-items-center">
               <Col lg={6} className="offset-lg-1">
                 <div className="mt-4">
-                  <h2>Team Collaboration in real time</h2>
+                  <h2>Co-founder</h2>
                   <p className="mt-4 text-muted">Praesent ut tincidunt massa vel facilisis dui Integer mattis quis
                   augue in rhoncus Integer mattis enim vel eros bibendum egestas id laoreet nisi
                   Praesent malesuada eros at bibendum eleifend Nam nec urna hendrerit interdum risus

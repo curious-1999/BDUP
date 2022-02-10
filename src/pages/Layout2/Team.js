@@ -19,15 +19,29 @@ export default class Contact extends Component {
           id: 1,
           img: Img1,
           name: 'Calvin Hubbard',
-          nickname: '#Calvin',
-          description: 'Invest in startups you believe. Learn how the business works and interact with the community as you grow your fortune.'
+          role: '#developer',
+          description: 'Passionate about technology'
         },
         {
           id: 2,
           img: Img2,
           name: 'Jeremiah Eskew',
-          nickname: '#Jeremiah',
-          description: 'GET YOUR FUNDS THROUGH BIZDATEUP. CONVERT YOUR COMMUNITY INTO CAPITAL  AND GET FUNDED.'
+          role: '#developer',
+          description: 'Passionate about technology'
+        },
+        {
+          id: 3,
+          img: Img1,
+          name: 'Calvin Hubbard',
+          role: '#developer',
+          description: 'Passionate about technology'
+        },
+        {
+          id: 4,
+          img: Img1,
+          name: 'Calvin Hubbard',
+          role: '#developer',
+          description: 'Passionate about technology'
         },
       ],
     };
@@ -48,26 +62,26 @@ export default class Contact extends Component {
       return (
         <div className="team-box p-3" key={teamindex}>
           <Row className="align-items-center">
-            <Col lg={13} style={{backgroundColor: "#f0f9fa", padding: "10px", margin:"20px" }}>
+            <Col lg={5} style={{backgroundColor: "#f0f9fa", padding: "10px", margin:"20px" }}>
               <div className="mt-4" style={{textAlign: "center" }}>
                 <h5 className="mt-2">{team.name}</h5>
-                <p className="team-badge bg-primary text-white rounded f-14 mt-2">#{team.nickname}</p>
+                <p className="team-badge bg-primary text-white rounded f-14 mt-2">#{team.role}</p>
                 <p className="text-muted mt-3">{team.description}</p>
                 <div className="team-social mt-4 pt-2">
                   <ul className="list-inline mb-0">
                     <li className="list-inline-item">
                       {/* <Link to="#" className="text-reset"><i className="mdi mdi-facebook"></i></Link> */}
-                      <Button>Invest Now</Button>
+                      {/* <Button>Invest Now</Button> */}
                     </li>
                   </ul>
                 </div>
               </div>
             </Col>
-            {/* <Col lg={6}>
+            <Col lg={6}>
               <div className="mt-4" style={{textAlign: "center"}}>
-                <Button>Invest Now</Button>
+              <img src={team.img} alt="" className="img-fluid rounded" />
               </div>
-            </Col> */}
+            </Col>
           </Row>
         </div>
       );
@@ -79,7 +93,7 @@ export default class Contact extends Component {
             <Row>
               <Col lg="12">
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4">Meet Our Expert People </h3>
+                  <h3 className="title-heading mt-4">Meet Our Team </h3>
                   <p className="text-muted f-17 mt-3">Vivamus ac nulla ultrices laoreet neque mollis mi morbi elementum mauris sit amet arcu <br /> fringilla auctor In eleifend maximus nisi sed vulputate.</p>
                   <img src={HomeUrl} height="15" className="mt-3" alt="" />
                 </div>
