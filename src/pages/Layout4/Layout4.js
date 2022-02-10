@@ -4,11 +4,11 @@ import React, { Component } from "react";
 import Navbar from "../../component/Navbar/NavBar";
 
 import Section from "./Section";
-import Services from "../../component/Services";
-import Pricing from "../../component/Pricing";
-import Team from "../../component/Team";
-import Clients from "../../component/Clients";
-import Contact from "../../component/Contact";
+import Services from "./Services";
+import Pricing from "./Pricing";
+import Team from "./Team";
+import Clients from "./Clients";
+import Contact from "./Contact";
 import Footer from "../../component/Footer/Footer";
 
 class Layout4 extends Component {

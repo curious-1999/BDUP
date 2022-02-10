@@ -68,7 +68,7 @@ class Layout1 extends Component {
           <Pricing />
 
           {/* Importing Team */}
-          {/* <Team /> */}
+          <Team />
 
           {/* Importing Clients */}
           {/* <Clients /> */}

@@ -100,9 +100,9 @@ export default class Pricing extends Component {
               </Col>
             </Row>
               {/* Render Pricing items */}
-              <Row xs = "3"> 
+              <Row className = "mt-5 pt-4"> 
               {this.state.pricing.map((item, key) => (
-                <Col key={key}>
+                <Col lg = "4" key={key}>
                   {/* <div className="pricing-box mt-4">
                     {item.pricingTag && (
                       <div className="pricing-badge"><span className="badge">Featured</span> </div>

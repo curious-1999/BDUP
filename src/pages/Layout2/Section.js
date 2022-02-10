@@ -26,13 +26,13 @@ class Section extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="bg-home home-bg-2" id="home">
-          <div className="bg-overlay"></div>
+        <section className="bg-home" id="home">
+          <div className="bg-overlay" style={{backgroundColor: "rgba(0, 0, 0, 0.8)"}}></div>
           <div className="home-center">
             <div className="home-desc-center">
               <Container>
                 <Row className="justify-content-center">
-                  <Col lg={9}>
+                  <Col lg={11}>
                     <div className="home-content text-center">
                       {/* <p className="mb-0 text-white">About Us</p> */}
                       {/* <img src={HomeUrl} height="15" alt="" /> */}
@@ -44,9 +44,12 @@ class Section extends Component {
                               }}
                             /></span></h1>
 
-                      <p className="text-white-50 mt-4 f-20">Vestibulum egestas magna ut aliquet sodales nunc
-                                    fermentum <br /> ligula
-                                    quis tidunt vitae massa.</p>
+                      <p className="text-white-50 mt-4 f-20">
+                      BizDateUp is a platform where founders, entrepreneurs and working professionals can find and connect with potential co-founders, business associates and like-minded individuals. We created BizDateUp with an idea to build a network of people who’ll share common interests, have their queries answered, and hopefully get the job done. 
+
+But BizDateUp is more than just a business-centric social platform. At the heart of BizDateUp lies a will to become a one-click startup solution hub where brands would be assisted and made to grow at their own pace. We offer services that you might need while running your startup. Mentorship sessions, Legal solutions, Website development, pitch deck, fundraising; you name it. All of it inside an ecosystem, BizDateUp.
+
+                      </p>
                       <div className="mt-4 pt-2">
                         <Link to="#" className="btn btn-primary mr-3">Contact Us</Link>
                         <Link to="#" className="video-play-icon text-white" onClick={this.openModal}><i className="mdi mdi-play-circle-outline text-white mr-2"></i>Watch Intro Video</Link>

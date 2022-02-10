@@ -206,7 +206,7 @@ p {
 }
 
 .bg-overlay {
-  background-color: rgba(35, 37, 47, 0.8);
+  background-color: rgba(7, 7, 7, 0.8);
   position: absolute;
   top: 0;
   right: 0;
@@ -994,7 +994,7 @@ p {
 
 .bg-home {
   position: relative;
-  padding: 240px 0px 240px 0px;
+  /* padding: 100px 0px 100px 0px; */
   border-radius: 0px 0px 0px 450px;
 }
 
@@ -1307,6 +1307,10 @@ p {
   border-radius: 0px 0px 350px 0px;
 }
 
+.bg-features2 {
+  border-radius: 0px 350px 0px 0px;
+}
+
 .count-box {
   padding-right: 50px;
   padding: 13px 20px;
@@ -1441,6 +1445,8 @@ p {
   padding: 3px 10px;
   position: relative;
   display: inline-block;
+  text-align: center;
+  border: #00b58c 5px;
 }
 
 .team-social-icon i {

@@ -12,7 +12,7 @@ import {
 import { Link } from "react-router-dom";
 
 // Import Logo
-import logodark from "../../assets/images/Bizzd.webp";
+import logodark from "../../assets/images/Bizzd.png";
 import logolight from "../../assets/images/logo-light.png";
 
 import ScrollspyNav from "./Scrollspy";

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import { Col, Container, Row } from "reactstrap";
+import { Col, Container, Row, Button } from "reactstrap";
 import Slider from "react-slick";
 
 
@@ -22,28 +22,14 @@ export default class Contact extends Component {
           img: Img1,
           name: 'Calvin Hubbard',
           nickname: '#Calvin',
-          description: 'Anterdum maleada fames Integer molestie ante primis nulla facibus felis ulputate platea elit.'
+          description: 'Invest in startups you believe. Learn how the business works and interact with the community as you grow your fortune.'
         },
         {
           id: 2,
           img: Img2,
           name: 'Jeremiah Eskew',
           nickname: '#Jeremiah',
-          description: 'Anterdum maleada fames Integer molestie ante primis nulla facibus felis ulputate platea elit.'
-        },
-        {
-          id: 3,
-          img: Img3,
-          name: 'Zachary Tevis',
-          nickname: '#Zachary',
-          description: 'Anterdum maleada fames Integer molestie ante primis nulla facibus felis ulputate platea elit.'
-        },
-        {
-          id: 4,
-          img: Img4,
-          name: 'William Alderman',
-          nickname: '#William',
-          description: 'Anterdum maleada fames Integer molestie ante primis nulla facibus felis ulputate platea elit.'
+          description: 'GET YOUR FUNDS THROUGH BIZDATEUP. CONVERT YOUR COMMUNITY INTO CAPITAL  AND GET FUNDED.'
         },
       ],
     };
@@ -64,34 +50,26 @@ export default class Contact extends Component {
       return (
         <div className="team-box p-3" key={teamindex}>
           <Row className="align-items-center">
-            <Col lg={6}>
-              <div className="mt-4">
+            <Col lg={13} style={{backgroundColor: "#f0f9fa", padding: "10px", margin:"20px" }}>
+              <div className="mt-4" style={{textAlign: "center" }}>
                 <h5 className="mt-2">{team.name}</h5>
                 <p className="team-badge bg-primary text-white rounded f-14 mt-2">#{team.nickname}</p>
                 <p className="text-muted mt-3">{team.description}</p>
                 <div className="team-social mt-4 pt-2">
                   <ul className="list-inline mb-0">
                     <li className="list-inline-item">
-                      <Link to="#" className="text-reset"><i className="mdi mdi-facebook"></i></Link>
-                    </li>
-                    <li className="list-inline-item">
-                      <Link to="#" className="text-reset"><i className="mdi mdi-twitter"></i></Link>
-                    </li>
-                    <li className="list-inline-item">
-                      <Link to="#" className="text-reset"><i className="mdi mdi-google"></i></Link>
-                    </li>
-                    <li className="list-inline-item">
-                      <Link to="#" className="text-reset"><i className="mdi mdi-pinterest"></i></Link>
+                      {/* <Link to="#" className="text-reset"><i className="mdi mdi-facebook"></i></Link> */}
+                      <Button>Invest Now</Button>
                     </li>
                   </ul>
                 </div>
               </div>
             </Col>
-            <Col lg={6}>
-              <div className="mt-4">
-                <img src={team.img} alt="" className="img-fluid rounded" />
+            {/* <Col lg={6}>
+              <div className="mt-4" style={{textAlign: "center"}}>
+                <Button>Invest Now</Button>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </div>
       );
