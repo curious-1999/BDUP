@@ -1,17 +1,12 @@
 import React, { Component } from "react";
+// import ReactDOM from 'react-dom';
+import Navbar from '../component/Navbar/NavBar'
+import Footer from '../component/Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../src/styles.scss';
+import Contact from '../component/Contact';
 
-// Importing Section
-import Navbar from "../../component/Navbar/NavBar";
-
-import Section from "./Section";
-import Services from "./Services";
-import Pricing from "./Pricing";
-import Team from "./Team";
-import Clients from "./Clients";
-import Contact from "./Contact";
-import Footer from "../../component/Footer/Footer";
-
-class Layout2 extends Component {
+class ContactUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,8 +19,8 @@ class Layout2 extends Component {
         // { id: 7, idnm: "contact", navheading: "Contact" },
       ],
       pos: document.documentElement.scrollTop,
-      imglight: true,
-      navClass: "navbar-light",
+      imglight: false,
+      navClass: "",
       fixTop : true
     };
   }
@@ -43,7 +38,7 @@ class Layout2 extends Component {
     if (scrollup > this.state.pos) {
       this.setState({ navClass: "nav-sticky", imglight: false });
     } else {
-      this.setState({ navClass: "navbar-light", imglight: true });
+      this.setState({ navClass: "", imglight: false });
     }
   };
 
@@ -58,22 +53,7 @@ class Layout2 extends Component {
             top={this.state.fixTop}
           />
 
-          {/* Importing Section */}
-          <Section />
-
-           {/* Importing Service */}
-           {/* <Services /> */}
-
-          {/* Importing Pricing */}
-          <Pricing />
-
-          {/* Importing Team */}
-          <Team />
-
-          {/* Importing Clients */}
-          <Clients />
-
-          {/* Importing Contact Us */}
+          <Contact />
 
           {/* Importing Footer */}
           <Footer />
@@ -81,4 +61,5 @@ class Layout2 extends Component {
     );
   }
 }
-export default Layout2;
+export default ContactUs;
+

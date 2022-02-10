@@ -62,7 +62,12 @@ export default class Contact extends Component {
       return (
         <div className="team-box p-3" key={teamindex}>
           <Row className="align-items-center">
-            <Col lg={5} style={{backgroundColor: "#f0f9fa", padding: "10px", margin:"20px" }}>
+          <Col lg={6}>
+              <div className="mt-4" style={{textAlign: "center"}}>
+              <img src={team.img} alt="" className="img-fluid rounded" />
+              </div>
+            </Col>
+            <Col lg={5}>
               <div className="mt-4" style={{textAlign: "center" }}>
                 <h5 className="mt-2">{team.name}</h5>
                 <p className="team-badge bg-primary text-white rounded f-14 mt-2">#{team.role}</p>
@@ -75,11 +80,6 @@ export default class Contact extends Component {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </Col>
-            <Col lg={6}>
-              <div className="mt-4" style={{textAlign: "center"}}>
-              <img src={team.img} alt="" className="img-fluid rounded" />
               </div>
             </Col>
           </Row>

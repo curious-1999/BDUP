@@ -122,7 +122,7 @@ export default class Clients extends Component {
             </Row>
           </Container>
         </section>
-        <section className="section bg-light bg-clients">
+        {/* <section className="section bg-light bg-clients">
           <Container>
             <Row>
               <Col lg={12}>
@@ -158,7 +158,7 @@ export default class Clients extends Component {
               </Col>
             </Row>
           </Container>
-        </section>
+        </section> */}
       </React.Fragment>
     );
   }

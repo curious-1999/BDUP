@@ -8,6 +8,7 @@ import Layout6 from "../src/pages/Layout6/Layout6";
 import Login from "../src/component/Login";
 import SignUp from "../src/component/SignUp";
 import ForgotPassword from "../src/component/ForgotPassword";
+import ContactUs from "./pages/ContactUs";
 import NewsPage from "../src/pages/news"
 
 ///////////////////////////////////////////////////////////////
@@ -27,8 +28,8 @@ const routes = [
   { path: "/SignUp", component: SignUp },
   { path: "/ForgotPassword", component: ForgotPassword },
   { path: "/NewsP", component: NewsPage},
+  { path: "/ContactUs", component: ContactUs },
   { path: "/", component: Layout1 },
-  // { path: "/About", component: AboutUs },
 ];
 
 // const Routes =()=>{
