@@ -95,7 +95,7 @@ export default class Clients extends Component {
 
     return (
       <React.Fragment>
-        <section className="section" id="clients">
+        {/* <section className="section" id="clients">
           <Container>
             <Row>
               <Col lg={12}>
@@ -121,16 +121,16 @@ export default class Clients extends Component {
               </Col>
             </Row>
           </Container>
-        </section>
-        <section className="section bg-light bg-clients">
+        </section> */}
+        <section className="section bg-clients" style={{padding: '0px 0px 100px 0px'}}>
           <Container>
             <Row>
               <Col lg={12}>
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4">All Trusted Brands</h3>
-                  <p className="text-muted f-17 mt-3">Vivamus ac nulla ultrices laoreet neque mollis mi morbi
-                  elementum mauris
-                            sit amet arcu <br /> fringilla auctor In eleifend maximus nisi sed vulputate.</p>
+                  <h3 className="title-heading mt-4">What else does BizDateUp bring to the table?</h3>
+                  <p className="text-muted f-17 mt-3">
+Running a startup is challenging. To cater to these issues,<br/> BizDateUp keeps coming up with services that fit every need that a founder can think of while running a startup.
+</p>
                   <img src={HomeUrl} height="15" className="mt-3" alt="" />
                 </div>
               </Col>
@@ -138,27 +138,48 @@ export default class Clients extends Component {
             <Row className="mt-5 pt-4">
               <Col lg={3}>
                 <div className="client-images mt-4">
-                  <img src={Client1} alt="logo-img" className="mx-auto img-fluid d-block" />
+                <h4 className="title-heading mt-4">Pitch Deck</h4>
                 </div>
               </Col>
               <Col lg={3}>
                 <div className="client-images mt-4">
-                  <img src={Client2} alt="logo-img" className="mx-auto img-fluid d-block" />
+                <h4 className="title-heading mt-4">Mentorship Sessions</h4>              
+                 </div>
+              </Col>
+              <Col lg={3}>
+                <div className="client-images mt-4">
+                <h4 className="title-heading mt-4">Legal Solutions</h4>
+                               </div>
+              </Col>
+              <Col lg={3}>
+                <div className="client-images mt-4">
+                <h4 className="title-heading mt-4">Website and App</h4>                
                 </div>
               </Col>
               <Col lg={3}>
                 <div className="client-images mt-4">
-                  <img src={Client3} alt="logo-img" className="mx-auto img-fluid d-block" />
+                <h4 className="title-heading mt-4">Intern & Hr recruitment</h4>                
                 </div>
               </Col>
               <Col lg={3}>
                 <div className="client-images mt-4">
-                  <img src={Client4} alt="logo-img" className="mx-auto img-fluid d-block" />
+                <h4 className="title-heading mt-4">Employee financial planning</h4>                
+                </div>
+              </Col>
+              <Col lg={3}>
+                <div className="client-images mt-4">
+                <h4 className="title-heading mt-4">Talent management</h4>                
+                </div>
+              </Col>
+              <Col lg={3}>
+                <div className="client-images mt-4">
+                <h4 className="title-heading mt-4">Market consultancy</h4>                
                 </div>
               </Col>
             </Row>
           </Container>
         </section>
+
       </React.Fragment>
     );
   }

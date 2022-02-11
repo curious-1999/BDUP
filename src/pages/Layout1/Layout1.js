@@ -57,24 +57,18 @@ class Layout1 extends Component {
             imglight={this.state.imglight}
             top={this.state.fixTop}
           />
-
+          <Section />
           {/* Importing Service */}
           <Services />
-
-          {/* Importing Section */}
-          <Section />
-
-          {/* Importing Pricing */}
           <Pricing />
-
           {/* Importing Team */}
           <Team />
 
           {/* Importing Clients */}
-          {/* <Clients /> */}
+          <Clients />
 
           {/* Importing Contact Us */}
-          <Contact />
+          {/* <Contact /> */}
 
           {/* Importing Footer */}
           <Footer />

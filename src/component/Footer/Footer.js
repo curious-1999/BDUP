@@ -14,20 +14,20 @@ class Footer extends Component {
           id: 1,
           title: "Important",
           child: [
-            { title: "Invest", link: "#" },
+            { title: "Invest", link: "/Invest" },
             { title: "Raise Funds", link: "#" },
-            { title: "Match", link: "#" },
-            { title: "Ui Design", link: "#" },
+            { title: "Match", link: "/Match" },
+            { title: "Ui Design", link: "/About" },
           ],
         },
         {
           id: 2,
           title: "Company",
           child: [
-            { title: "Contact", link: "#" },
-            { title: "Privacy Policy", link: "#" },
+            { title: "Contact", link: "/ContactUs" },
+            { title: "Privacy Policy", link: "/Privacy" },
             { title: "Faq", link: "#" },
-            { title: "Terms of use", link: "#" }
+            { title: "Terms of use", link: "/Terms" }
           ],
         },
       ],
@@ -46,7 +46,7 @@ class Footer extends Component {
               <Col lg={4}>
                 <div className="footer-info mt-4">
                   <img src={LogoDark} alt="" height="40" />
-                  <p className="text-muted mt-4 mb-2">One-stop solution to connect with a Co-founder, get support, and raise funds for your start-up.</p>
+                  <p className="text-muted mt-4 mb-2">One-stop platform for Startups to connect with a Co-founder, Raise funds and Invest in your favorite startups.</p>
                   <div className="team-social mt-4 pt-2">
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item">

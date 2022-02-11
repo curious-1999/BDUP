@@ -79,10 +79,8 @@ export default class Services extends Component {
             <Row>
               <Col lg="12">
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4"></h3>
                   <p className="text-muted f-17 mt-3">FIND YOUR PERFECT CO-FOUNDER. IT’S THAT EASY!<br /> WANT TO INVEST IN YOUR FAVORITE STARTUP? KEEP SCROLLING!
 </p>
-
                   <img src={HomeUrl} height="15" className="mt-3" alt="" />
                 </div>
               </Col>

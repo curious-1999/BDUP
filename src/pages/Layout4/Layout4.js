@@ -11,6 +11,21 @@ import Clients from "./Clients";
 import Contact from "./Contact";
 import Footer from "../../component/Footer/Footer";
 import FounderA from "./FounderA";
+import ReactPlayer from "react-player";
+import { Col, Container, Row } from "reactstrap";
+const Youtube = () => {
+  return (
+  <section className="section bg-services" style={{padding: '100px 0px 0px 0px'}}>
+  <Container >
+                <div className="title-box text-center">
+                <ReactPlayer width = "100%" height = "600px" controls = "true"
+                          url="https://www.youtube.com/watch?v=UVCP4bKy9Iw"
+                />
+                </div>
+    </Container>
+ </section>
+  );
+}
 
 class Layout4 extends Component {
   constructor(props) {
@@ -61,6 +76,8 @@ class Layout4 extends Component {
 
           {/* Importing Section */}
           <Section />
+
+          <Youtube/>
 
            {/* Importing Service */}
            <Services />

@@ -9,7 +9,9 @@ import Login from "../src/component/Login";
 import SignUp from "../src/component/SignUp";
 import ForgotPassword from "../src/component/ForgotPassword";
 import ContactUs from "./pages/ContactUs";
-import NewsPage from "../src/pages/news"
+import Deal from "../src/pages/Deals";
+import Privacy from '../src/pages/Privacy';
+import Terms from '../src/pages/Terms';
 
 ///////////////////////////////////////////////////////////////
 // import {
@@ -27,8 +29,10 @@ const routes = [
   { path: "/Login", component: Login },
   { path: "/SignUp", component: SignUp },
   { path: "/ForgotPassword", component: ForgotPassword },
-  { path: "/NewsP", component: NewsPage},
   { path: "/ContactUs", component: ContactUs },
+  { path: "/Privacy", component: Privacy },
+  { path: "/Terms", component: Terms },
+  { path: "/Deals", component: Deal},
   { path: "/", component: Layout1 },
 ];
 

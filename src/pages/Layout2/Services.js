@@ -112,9 +112,8 @@ export default class Services extends Component {
                 <div className="pr-4 mt-4">
                   <p className="text-uppercase">About BizDateUp</p>
                   <h3>Two Perspective, One spot!</h3>
-                  <p className="text-muted mt-3">Say Hello to an AI-based algorithm that lets you connect with Co-founders, Investors, and real-world startups solutions. 
-
-THE ONLY ALGORITHM THAT HELPS YOU FIND CO-FOUNDERS, INVESTORS AND SERVICES THAT YOUR STARTUP NEEDS. POWERED WITH AI*
+                  <p className="text-muted mt-3">Bizateup is a  dating platform that enables startup Founders to find and match with potential Co-Founders. Bizdateup ets you Startups to raise funds through Public rounds and also lets users invest in their favorite startups.
+Apart from that, BizDateUp offers services to boost a startup's growth exponentially. To name a few, these services include Mentorship sessions, Legal solutions, Pitch Deck, Website Development, etc.
 </p>
                   <div className="mt-4 pt-1">
                     <Link to="#" className="btn btn-outline-primary">Read more</Link>

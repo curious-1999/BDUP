@@ -18,28 +18,21 @@ export default class Contact extends Component {
         {
           id: 1,
           img: Img1,
-          name: 'Calvin Hubbard',
+          name: "Prince Dmello",
           role: '#developer',
           description: 'Passionate about technology'
         },
         {
           id: 2,
           img: Img2,
-          name: 'Jeremiah Eskew',
+          name: 'Vishal Allada',
           role: '#developer',
           description: 'Passionate about technology'
         },
         {
           id: 3,
           img: Img1,
-          name: 'Calvin Hubbard',
-          role: '#developer',
-          description: 'Passionate about technology'
-        },
-        {
-          id: 4,
-          img: Img1,
-          name: 'Calvin Hubbard',
+          name: 'Pranav Baradkar',
           role: '#developer',
           description: 'Passionate about technology'
         },
@@ -115,14 +108,11 @@ export default class Contact extends Component {
             <Row className="justify-content-center">
               <Col lg={9}>
                 <div className="text-center">
-                  <h2>Get Started With <span className="text-primary">Thamza</span></h2>
-                  <p className="text-muted mt-3">Quisque iaculis urna eu magna semper quis ultrices lectus efficitur
-                  Praesent convallis
-                  velit urna, vitae tristique tellus feugiat a maecenas diam metus convallis id cursus vel
-                            tellus.<br /> Curabitur ullamcorper feugiat convallis.</p>
+                  <h2>WANT TO INVEST IN YOUR <span className="text-primary">FAVORITE STARTUP</span></h2>
+                  <p className="text-muted mt-3">Invest in startups you believe.<br/> Learn how the business works and interact with the community as you grow your fortune.</p>
                   <div className="mt-4 pt-2">
-                    <Link to="#" className="btn btn-soft-primary btn-round mr-3 btn-rounded">Request a demo</Link>
-                    <Link to="#" className="btn btn-primary btn-round btn-rounded">Get Started Now</Link>
+                    <Link to="/Invest" className="btn btn-soft-primary btn-round mr-3 btn-rounded">Read More</Link>
+                    <Link to="#" className="btn btn-primary btn-round btn-rounded"> Explore Startups </Link>
                   </div>
                 </div>
               </Col>

@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button' ;
 //import images
 import Img1 from '../assets/images/features/img-1.png';
 import HomeUrl from '../assets/images/home-border.png';
-import img from '../assets/images/users/img-1.png' ; 
+import img from '../assets/images/users/img.jpg' ; 
 
 export default class Pricing extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ export default class Pricing extends Component {
       pricing: [
         {
           id: 1,
-          title: "Starter",
+          title: "Startup 1",
           img: img,
           description: 'Semper urna veal tempus pharetra elit habisse platea dictumst.',
           icon: 'mdi-account',
@@ -28,28 +28,26 @@ export default class Pricing extends Component {
         },
         {
           id: 2,
-          title: "Personal",
+          title: "Startup 2",
           img: img,
           titlePrimary: true,
           description: 'Semper urna veal tempus pharetra elit habisse platea dictumst.',
           icon: 'mdi-account-multiple text-primary',
           percentageRaised: '20', 
-          pricingTag: true,
           tag: [
             "fintech","blockchain"
           ],
         },
         {
           id: 3,
-          title: "Ultimate",
+          title: "Startup 3",
           img: img,
           description: 'Semper urna veal tempus pharetra elit habisse platea dictumst.',
           titlePrimary: false,
           icon: 'mdi-account-multiple-plus',
           percentageRaised: '20', 
-          pricingTag: false,
           tag: [
-            "fintech","blockchain","fintech","blockchain","fintech","blockchain",
+            "fintech","blockchain",
           ],
         },
       ],
@@ -71,22 +69,22 @@ export default class Pricing extends Component {
               </Col>
               <Col lg={6} className="offset-lg-1">
                 <div className="mt-4">
-                  <h2>Team Collaboration in real time</h2>
+                  <h2>New Startups are joining!</h2>
                   <p className="mt-4 text-muted">Praesent ut tincidunt massa vel facilisis dui Integer mattis quis
                   augue in rhoncus Integer mattis enim vel eros bibendum egestas id laoreet nisi
                   Praesent malesuada eros at bibendum eleifend Nam nec urna hendrerit interdum risus
                   Donec faucibus quis magna sit amet laoreet Maecenas finibus semper massa in finibus est
                             venenatis quis.</p>
 
-                  <div className="mt-4">
+                  {/* <div className="mt-4">
                     <Link to="#" className="btn btn-primary">Explore More</Link>
-                  </div>
+                  </div> */}
                 </div>
               </Col>
             </Row>
           </Container>
         </section>
-        <section className="section" id="pricing">
+        <section className="section" style={{padding: '100px 0px 0px 0px'}}>
           <Container>
             <Row>
               <Col lg={12}>
@@ -140,19 +138,19 @@ export default class Pricing extends Component {
                        { item.description }
                       </Card.Text>
                       <div > 
-                      <i>Tags:</i>
+                      <i>Tags:</i> {' '}
+                      
                       {item.tag.map(
                         (t) => {
                           return ( 
                             <>
-                            <i>
-                            <Badge color="success">{t}</Badge>
+                            <Badge color="success" style={{fontSize: '17px'}}>{t}</Badge>
                             {' '}
-                            </i>
                             </>
                           ) ; 
                         }
                       )}
+                      <h1></h1>
                       </div>
                       <Button variant="outline-primary">Read more</Button>
                     </Card.Body>

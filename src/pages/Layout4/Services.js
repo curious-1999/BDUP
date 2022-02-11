@@ -67,7 +67,6 @@ export default class Services extends Component {
             <Row>
               <Col lg="12">
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4"></h3>
                   <h2 className="text-muted f-17 mt-3">
                   How to invest in your favorite startups with BizDateUp ?
                   </h2>

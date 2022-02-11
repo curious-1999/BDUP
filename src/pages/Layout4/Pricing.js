@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button' ;
 //import images
 import Img1 from '../../assets/images/features/img-1.png';
 import HomeUrl from '../../assets/images/home-border.png';
-import img from '../../assets/images/users/img-1.png' ; 
+import img from '../../assets/images/users/img.jpg' ; 
 
 export default class Pricing extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ export default class Pricing extends Component {
           percentageRaised: '20', 
           pricingTag: false,
           tag: [
-            "fintech","blockchain","fintech","blockchain","fintech","blockchain",
+            "fintech","blockchain",
           ],
         },
       ],
@@ -111,20 +111,20 @@ export default class Pricing extends Component {
                        { item.description }
                       </Card.Text>
                       <div > 
-                      <i>Tags:</i>
+                      <i>Tags: </i>
                       {item.tag.map(
                         (t) => {
                           return ( 
                             <>
-                            <i>
-                            <Badge color="success">{t}</Badge>
+                          
+                            <Badge color="success" style={{fontSize: '17px'}}>{t}</Badge>
                             {' '}
-                            </i>
                             </>
                           ) ; 
                         }
                       )}
                       </div>
+                      <h1></h1>
                       <Button variant="outline-primary">Read more</Button>
                     </Card.Body>
                   </Card>
