@@ -13,60 +13,66 @@ export default class Services extends Component {
       counters: [
         {
           id: '1',
-          extraclass: '',
-          start: 25,
-          end: 49,
-          title: "Employees",
-          description: 'Aliquam egestas vehicula sapien cibus sit amet rutrum dolor molestie.'
+          extraclass: 'pt-3',
+          start: 0,
+          end: 1,
+          title: "Signup",
+          description: 'Create a profile by choosing specific keywords based on what you are looking for'
         },
         {
           id: '2',
           extraclass: 'pt-3',
-          start: 25,
-          end: 76,
-          title: "Projects",
-          description: 'Pellentesque habitant morbi malesuada fames ac turpis egestas.'
+          start: 0,
+          end: 2,
+          title: "Matching",
+          description: 'Our AI-based algorithm takes in your preferences and finds the ideal match.'
         },
         {
           id: '3',
           extraclass: 'pt-3',
-          start: 25,
-          end: 99,
-          title: "CLIENTS",
-          description: 'Suspendisse congue risus consequat sapien potitor risus tincidunt.'
+          start: 0,
+          end: 3,
+          title: "Investing",
+          description: 'Invest in your favorite startup or as a founder RAISE FUNDS.'
         },
       ],
       services: [
         {
           id: 'service1',
-          icon: 'mdi-google',
-          title: "Signup and get started",
-          description: "Create a profile and answer a questionnaire based on your skills. "
+          icon: 'mdi-cursor-pointer',
+          title: "One-click startup solution platform.",
+          description: "Get access to services that you might need while running your startup. Mentorship sessions, Legal solutions and more!"
         },
         {
           id: 'service2',
-          icon: 'mdi-instagram',
-          title: "Select Skills",
-          description: 'Choose specific keywords that highlight your expertise.'
+          icon: 'mdi-wan',
+          title: "Build your network",
+          description: 'Interact with like-minded individuals while you learn the insights of startups and businesses in general.'
         },
         {
           id: 'service3',
-          icon: 'mdi-youtube',
-          title: "Enter your preferences",
-          description: 'Select keywords based on what you are looking for in your next co-founder.'
+          icon: 'mdi-account-switch',
+          title: "Find the perfect Co-Founder",
+          description: 'You have an idea. Get your idea to a co-founder who has the strength to put it to work.'
         },
         {
-          id: 'service2',
-          icon: 'mdi-instagram',
-          title: "AI takes charge",
-          description: 'Our AI-based algorithm takes in your preferences and finds the ideal match.'
+          id: 'service1',
+          icon: 'mdi-cash-multiple',
+          title: "Raise funds",
+          description: 'Your startup has some recurring costs. Get the eyeballs to your business, raise the funds that you’ve always wanted. Crowdfunding made simple.'
         },
-        {
+      {
           id: 'service2',
-          icon: 'mdi-instagram',
+          icon: 'mdi-face-agent',
           title: "They said Yes!",
-          description: 'You just got yourself a co-founder!'
+          description: 'Got stuck somewhere in your startup journey? Our executives are there to help.'
         },
+        {
+          id: 'service3',
+          icon: 'mdi-finance',
+          title: "Invest in your favorite startups",
+          description: 'You believe a startup is going to be a huge hit. Get yourself a piece of the pie. Invest, Interact, learn'
+        }
       ],
     };
   }
@@ -99,9 +105,9 @@ export default class Services extends Component {
                     <h5 className="mt-4">{item.title}</h5>
                     <p className="text-muted mt-3">{item.description}</p>
 
-                    <div className="mt-3">
+                    {/* <div className="mt-3">
                       <Link to="#" className="text-primary f-16">Learn More <i className="mdi mdi-arrow-right ml-1"></i></Link>
-                    </div>
+                    </div> */}
 
                   </div>
                 </Col>
@@ -114,7 +120,7 @@ export default class Services extends Component {
                   <h3>Two Perspective, One spot!</h3>
                   <p className="text-muted mt-3">Say Hello to an AI-based algorithm that lets you connect with Co-founders, Investors, and real-world startups solutions. 
 
-THE ONLY ALGORITHM THAT HELPS YOU FIND CO-FOUNDERS, INVESTORS AND SERVICES THAT YOUR STARTUP NEEDS. POWERED WITH AI*
+THE ONLY ALGORITHM THAT HELPS YOU FIND CO-FOUNDERS, INVESTORS AND SERVICES THAT YOUR STARTUP NEEDS. POWERED WITH AI
 </p>
                   <div className="mt-4 pt-1">
                     <Link to="#" className="btn btn-outline-primary">Read more</Link>
