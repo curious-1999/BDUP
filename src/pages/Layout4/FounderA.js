@@ -5,55 +5,28 @@ import CountUp from 'react-countup';
 import { Link } from "react-router-dom";
 import HomeUrl from '../../assets/images/home-border.png';
 
-export default class Services extends Component {
+export default class FounderA extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
-      counters: [
-        {
-          id: '1',
-          extraclass: '',
-          start: 25,
-          end: 49,
-          title: "Employees",
-          description: 'Aliquam egestas vehicula sapien cibus sit amet rutrum dolor molestie.'
-        },
-        {
-          id: '2',
-          extraclass: 'pt-3',
-          start: 25,
-          end: 76,
-          title: "Projects",
-          description: 'Pellentesque habitant morbi malesuada fames ac turpis egestas.'
-        },
-        {
-          id: '3',
-          extraclass: 'pt-3',
-          start: 25,
-          end: 99,
-          title: "CLIENTS",
-          description: 'Suspendisse congue risus consequat sapien potitor risus tincidunt.'
-        },
-      ],
       services: [
         {
           id: 'service1',
           icon: 'mdi-numeric-1-circle',
-          title: "Invest instantly",
-          description: "It takes less than 30 seconds to get started in your investing journey. Hassle-free secure transactions are a thing. It’s about time you put in the money to work for you."
+          title: "Know what’s happening",
+          description: "Get the startup insights right at your disposal. Manage reports, user traction all in one go. Gain control of your startup’s strength."
         },
         {
           id: 'service2',
           icon: 'mdi-numeric-2-circle',
-          title: "Jump before you leap",
-          description: 'Get your market research done by interacting with peers and other investors in the BizDateUp network.'
+          title: "Taking the toll out of tracking",
+          description: 'Keeping track of everything can be hard. Prioritize your metrics, get the most out of our tools.'
         },
         {
           id: 'service3',
           icon: 'mdi-numeric-3-circle',
-          title: "Stay up-to-date",
-          description: 'Know when the market’s on the rise. Our Analytical tools will have you covered'
+          title: "It gets easy from here",
+          description: "Paperwork is a thing from the past. Put in the details and it's done. Nothing else."
         },
       ],
     };
@@ -69,9 +42,9 @@ export default class Services extends Component {
                 <div className="title-box text-center">
                   <h3 className="title-heading mt-4"></h3>
                   <h2 className="text-muted f-17 mt-3">
-                  How to invest in your favorite startups with BizDateUp ?
+                  FROM THE DESK OF STARTUP EXPERTS
                   </h2>
-
+                  <p>The fundraising experience on BizDateUp is as smooth as it gets. Plus, the control to create automated reports that are based on analytics is what I was looking for. Let’s see what more BizDateUp has to offer. </p>
                   <img src={HomeUrl} height="15" className="mt-3" alt="" />
                 </div>
               </Col>

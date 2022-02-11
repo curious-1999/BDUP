@@ -10,6 +10,7 @@ import Team from "./Team";
 import Clients from "./Clients";
 import Contact from "./Contact";
 import Footer from "../../component/Footer/Footer";
+import FounderA from "./FounderA";
 
 class Layout4 extends Component {
   constructor(props) {
@@ -67,14 +68,16 @@ class Layout4 extends Component {
           {/* Importing Pricing */}
           <Pricing />
 
+          <FounderA/>
+
           {/* Importing Team */}
           <Team />
 
           {/* Importing Clients */}
-          <Clients />
+          {/* <Clients /> */}
 
           {/* Importing Contact Us */}
-          <Contact />
+          {/* <Contact /> */}
 
           {/* Importing Footer */}
           <Footer />

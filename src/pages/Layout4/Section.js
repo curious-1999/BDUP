@@ -38,15 +38,17 @@ class Section extends Component {
       slideitems: [
         {
           id: 100,
-          img: Background1,
+          img: Background2,
+          butn: 'Invest Now',
+          title:'Invest in startups you trust',
+          desc: 'Start with as low as Rs. 1000 and help those startups to stay in the game. Own a share, Interact with the community and build your portfolio.'
         },
         {
           id: 101,
-          img: Background2,
-        },
-        {
-          id: 103,
-          img: Background3,
+          img: Background1,
+          butn: 'Raise Funds',
+          title: 'Convert your circle into a crowd that cheers you up!',
+          desc: 'Use the customer base to fuel the wagon. Get funded without failing. Apply now and let the crowd do the magic'
         },
       ],
     };
@@ -76,13 +78,11 @@ class Section extends Component {
                   <Row className="align-items-center justify-content-center">
                     <Col lg="10">
                       <div className="home-content text-center text-white">
-                        <h1 className="home-title">We love make things amazing and simple</h1>
-                        <p className="text-white-50 mt-4 f-20">Vestibulum egestas magna ut aliquet sodales nunc
-                                                       fermentum <br />  ligula
-                                                        quis tidunt vitae massa.</p>
+                        <h1 className="home-title">{item.title}</h1>
+                        <p className="text-white-50 mt-4 f-20">{item.desc}</p>
                         <div className="mt-5">
                           <div className="mt-4 pt-2">
-                            <Link to="#" className="btn btn-primary btn-rounded mr-3">Contact Us</Link>
+                            <Link to="#" className="btn btn-primary btn-rounded mr-3">{item.butn}</Link>
                           </div>
                         </div>
                       </div>
