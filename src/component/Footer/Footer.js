@@ -12,11 +12,11 @@ class Footer extends Component {
       links: [
         {
           id: 1,
-          title: "Services",
+          title: "Important",
           child: [
-            { title: "Web Design", link: "#" },
-            { title: "Lorem Test", link: "#" },
-            { title: "Credit", link: "#" },
+            { title: "Invest", link: "#" },
+            { title: "Raise Funds", link: "#" },
+            { title: "Match", link: "#" },
             { title: "Ui Design", link: "#" },
           ],
         },
@@ -24,9 +24,10 @@ class Footer extends Component {
           id: 2,
           title: "Company",
           child: [
-            { title: "Features", link: "#" },
+            { title: "Contact", link: "#" },
+            { title: "Privacy Policy", link: "#" },
             { title: "Faq", link: "#" },
-            { title: "Contact us", link: "#" }
+            { title: "Terms of use", link: "#" }
           ],
         },
       ],
@@ -45,21 +46,20 @@ class Footer extends Component {
               <Col lg={4}>
                 <div className="footer-info mt-4">
                   <img src={LogoDark} alt="" height="40" />
-                  <p className="text-muted mt-4 mb-2">Aenean lacus enim Praesent congue praesent viverra interdum
-                            maximus lobortis.</p>
+                  <p className="text-muted mt-4 mb-2">One-stop solution to connect with a Co-founder, get support, and raise funds for your start-up.</p>
                   <div className="team-social mt-4 pt-2">
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item">
-                        <Link to="#" className="text-reset"><i className="mdi mdi-facebook"></i></Link>
+                        <Link to="https://www.instagram.com/bizdateup/" className="text-reset"><i className="mdi mdi-instagram"></i></Link>
                       </li>{" "}
                       <li className="list-inline-item">
-                      <Link to="#" className="text-reset"><i className="mdi mdi-twitter"></i></Link>
+                      <Link to="https://www.facebook.com/bizdateupindia" className="text-reset"><i className="mdi mdi-facebook"></i></Link>
                       </li>{" "}
                       <li className="list-inline-item">
-                      <Link to="#" className="text-reset"><i className="mdi mdi-google"></i></Link>
+                      <Link to="https://in.linkedin.com/company/bizdateup" className="text-reset"><i className="mdi mdi-linkedin"></i></Link>
                       </li>{" "}
                       <li className="list-inline-item">
-                      <Link to="#" className="text-reset"><i className="mdi mdi-pinterest"></i></Link>
+                      <Link to="https://twitter.com/date_biz" className="text-reset"><i className="mdi mdi-twitter"></i></Link>
                       </li>{" "}
                     </ul>
                   </div>

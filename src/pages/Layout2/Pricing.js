@@ -21,7 +21,7 @@ export default class Pricing extends Component {
           description: 'Semper urna veal tempus pharetra elit habisse platea dictumst.',
           icon: 'mdi-account',
           titlePrimary: false,
-          percentageRaised: '$9.99',
+          percentageRaised: '30',
           tag: [
             "fintech","blockchain"
           ],

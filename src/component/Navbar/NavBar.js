@@ -89,14 +89,15 @@ class NavbarPage extends Component {
                     <Link to="/" className="nav-link">Home</Link>
                   </li>
                   <li className="nav-item">
+                    <Link to="/About" className="nav-link">AboutUs</Link>
+                  </li>
+                  <li className="nav-item">
                     <Link to="/Match" className="nav-link">Match</Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/Invest" className="nav-link">Invest</Link>
                   </li>
-                  <li className="nav-item">
-                    <Link to="/About" className="nav-link">AboutUs</Link>
-                  </li>
+                
                   <li className="nav-item">
                     <Link to="/Login" className="nav-link">Log In</Link>
                   </li>

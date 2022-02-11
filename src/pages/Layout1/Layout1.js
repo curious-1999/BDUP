@@ -58,11 +58,11 @@ class Layout1 extends Component {
             top={this.state.fixTop}
           />
 
+          {/* Importing Service */}
+          <Services />
+
           {/* Importing Section */}
           <Section />
-
-           {/* Importing Service */}
-           <Services />
 
           {/* Importing Pricing */}
           <Pricing />
