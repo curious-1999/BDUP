@@ -12,6 +12,7 @@ import ContactUs from "./pages/ContactUs";
 import Deal from "../src/pages/Deals";
 import Privacy from '../src/pages/Privacy';
 import Terms from '../src/pages/Terms';
+import Investform from '../src/component/Investform'
 
 ///////////////////////////////////////////////////////////////
 // import {
@@ -33,6 +34,7 @@ const routes = [
   { path: "/Privacy", component: Privacy },
   { path: "/Terms", component: Terms },
   { path: "/Deals", component: Deal},
+  {path: "/Invst/Form", component: Investform},
   { path: "/", component: Layout1 },
 ];
 
