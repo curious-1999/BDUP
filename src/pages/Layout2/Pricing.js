@@ -71,16 +71,11 @@ export default class Pricing extends Component {
               </Col>
               <Col lg={6} className="offset-lg-1">
                 <div className="mt-4">
-                  <h2>Founder</h2>
-                  <p className="mt-4 text-muted">Praesent ut tincidunt massa vel facilisis dui Integer mattis quis
-                  augue in rhoncus Integer mattis enim vel eros bibendum egestas id laoreet nisi
-                  Praesent malesuada eros at bibendum eleifend Nam nec urna hendrerit interdum risus
-                  Donec faucibus quis magna sit amet laoreet Maecenas finibus semper massa in finibus est
-                            venenatis quis.</p>
+                  <h2>Jeet Chandan</h2>
+                  <h3>Founder</h3>
+                  <p className="mt-4 text-muted">The brain behind BizDateUp, Jeet M Chandan wanted to know the insights of running a business from a very young age. Always excited to dig deep, find the problem and knock it off with a solution is what Jeet is known for. Thus, this serial entrepreneur built BizDateUp to collect all those issues, tackle them with resilience and frame an environment that emphasizes heavily the drive to provide value to startups in general. </p>
 
-                  <div className="mt-4">
-                    <Link to="#" className="btn btn-primary">Explore More</Link>
-                  </div>
+                  
                 </div>
               </Col>
             </Row>
@@ -95,16 +90,11 @@ export default class Pricing extends Component {
             <Row className="align-items-center">
               <Col lg={6} className="offset-lg-1">
                 <div className="mt-4">
-                  <h2>Co-founder</h2>
-                  <p className="mt-4 text-muted">Praesent ut tincidunt massa vel facilisis dui Integer mattis quis
-                  augue in rhoncus Integer mattis enim vel eros bibendum egestas id laoreet nisi
-                  Praesent malesuada eros at bibendum eleifend Nam nec urna hendrerit interdum risus
-                  Donec faucibus quis magna sit amet laoreet Maecenas finibus semper massa in finibus est
-                            venenatis quis.</p>
+                  <h2>Meet Jain</h2>
+                  <h3>Co-founder & CEO</h3>
+                  <p className="mt-4 text-muted">The shoulder to rely on, Meet Jain is known for getting the thoughts out of the canvas and putting in the actual work. With his life revolving around startups and brand building, this entrepreneur has what it takes to never let the team down and always bring something new to the table. And so, he’s been looking over the whole crew by making sure the boat stays afloat.</p>
 
-                  <div className="mt-4">
-                    <Link to="#" className="btn btn-primary">Explore More</Link>
-                  </div>
+                  
                 </div>
               </Col>
               <Col lg={5}>

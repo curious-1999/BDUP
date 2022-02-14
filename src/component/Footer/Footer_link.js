@@ -8,7 +8,7 @@ class Footer_link extends Component {
       <Row>
         <Col lg={12}>
           <div className="text-center">
-            <p className="text-muted mb-0">{(new Date().getFullYear())}{" "} © BizDateUp.All Copyrights reserved.</p>
+            <p className="text-muted mb-0">2021 © BizDateUp. All Copyrights reserved.</p>
           </div>
         </Col>
       </Row>

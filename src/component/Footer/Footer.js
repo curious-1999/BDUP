@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, Form, Button, Input} from "reactstrap";
 import FooterLink from "../Footer/Footer_link";
 
-import LogoDark from '../../assets/images/Bizzd.png';
+import LogoDark from '../../assets/images/logo-dark.png';
 
 class Footer extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class Footer extends Component {
             { title: "Invest", link: "/Invest" },
             { title: "Raise Funds", link: "#" },
             { title: "Match", link: "/Match" },
-            { title: "Ui Design", link: "/About" },
+            { title: "About Us", link: "/About" },
           ],
         },
         {
@@ -26,7 +26,7 @@ class Footer extends Component {
           child: [
             { title: "Contact", link: "/ContactUs" },
             { title: "Privacy Policy", link: "/Privacy" },
-            { title: "Faq", link: "#" },
+            { title: "FAQ", link: "#" },
             { title: "Terms of use", link: "/Terms" }
           ],
         },
@@ -50,16 +50,16 @@ class Footer extends Component {
                   <div className="team-social mt-4 pt-2">
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item">
-                        <Link to="https://www.instagram.com/bizdateup/" className="text-reset"><i className="mdi mdi-instagram"></i></Link>
+                        <Link to="" href="https://www.instagram.com/bizdateup/" target="_blank" className="text-reset"><i className="mdi mdi-instagram"></i></Link>
                       </li>{" "}
                       <li className="list-inline-item">
-                      <Link to="https://www.facebook.com/bizdateupindia" className="text-reset"><i className="mdi mdi-facebook"></i></Link>
+                      <Link to="https://www.facebook.com/bizdateupindia" target="_blank" className="text-reset"><i className="mdi mdi-facebook"></i></Link>
                       </li>{" "}
                       <li className="list-inline-item">
-                      <Link to="https://in.linkedin.com/company/bizdateup" className="text-reset"><i className="mdi mdi-linkedin"></i></Link>
+                      <Link to="https://in.linkedin.com/company/bizdateup" target="_blank" className="text-reset"><i className="mdi mdi-linkedin"></i></Link>
                       </li>{" "}
                       <li className="list-inline-item">
-                      <Link to="https://twitter.com/date_biz" className="text-reset"><i className="mdi mdi-twitter"></i></Link>
+                      <Link to="https://twitter.com/date_biz" target="_blank" className="text-reset"><i className="mdi mdi-twitter"></i></Link>
                       </li>{" "}
                     </ul>
                   </div>

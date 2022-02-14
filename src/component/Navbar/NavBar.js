@@ -12,7 +12,7 @@ import {
 import { Link } from "react-router-dom";
 
 // Import Logo
-import logodark from "../../assets/images/Bizzd.png";
+import logodark from "../../assets/images/logo-dark.png";
 import logolight from "../../assets/images/logo-light.png";
 
 import ScrollspyNav from "./Scrollspy";
@@ -47,9 +47,9 @@ class NavbarPage extends Component {
           {/* LOGO */}
           <NavbarBrand className="navbar-brand logo text-uppercase" href="/">
               {this.props.imglight === true ? (
-                <img src={logodark} alt="" height="80" />
+                <img src={logodark} alt="" height="40" />
               ) : (
-                  <img src={logodark} alt="" height="80" />
+                  <img src={logodark} alt="" height="40" />
                 )}
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle}>

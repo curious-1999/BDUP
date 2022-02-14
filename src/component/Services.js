@@ -39,9 +39,21 @@ export default class Services extends Component {
       services: [
         {
           id: 'service1',
+          icon: 'mdi-cash-multiple',
+          title: "Raise funds",
+          description: 'Your startup has some recurring costs. Get the eyeballs to your business, raise the funds that you’ve always wanted.'
+        },
+        {
+          id: 'service3',
+          icon: 'mdi-finance',
+          title: "Invest in your favorite startups",
+          description: 'You believe a startup is going to be a huge hit. Get yourself a piece of the pie. Invest, Interact, learn'
+        },
+        {
+          id: 'service1',
           icon: 'mdi-cursor-pointer',
-          title: "One-click startup solution platform.",
-          description: "Get access to services that you might need while running your startup. Mentorship sessions, Legal solutions and more!"
+          title: "Startup solution platform.",
+          description: "Get access to services that you might need while running your startup. Mentorship sessions, Legal solutions"
         },
         {
           id: 'service2',
@@ -55,24 +67,14 @@ export default class Services extends Component {
           title: "Find the perfect Co-Founder",
           description: 'You have an idea. Get your idea to a co-founder who has the strength to put it to work.'
         },
-        {
-          id: 'service1',
-          icon: 'mdi-cash-multiple',
-          title: "Raise funds",
-          description: 'Your startup has some recurring costs. Get the eyeballs to your business, raise the funds that you’ve always wanted. Crowdfunding made simple.'
-        },
+        
       {
           id: 'service2',
           icon: 'mdi-account-group',
           title: "Customer support",
-          description: 'Got stuck somewhere in your startup journey? Our executives are there to help.'
-        },
-        {
-          id: 'service3',
-          icon: 'mdi-finance',
-          title: "Invest in your favorite startups",
-          description: 'You believe a startup is going to be a huge hit. Get yourself a piece of the pie. Invest, Interact, learn'
+          description: 'Got stuck somewhere in your startup journey? Our Bizdateup executives are there to help.'
         }
+       
       ],
     };
   }
