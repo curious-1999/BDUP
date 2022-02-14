@@ -1,20 +1,110 @@
-
 import React, { Component } from "react";
 
-import { Col, Container, Form, FormGroup, Input, Label, Row } from "reactstrap";
+import { Col, Container, Form, FormGroup, Input, Label, Row, Badge, Button} from "reactstrap";
+import ReactPlayer from "react-player";
+
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
 
 import HomeUrl from '../../assets/images/home-border.png';
 import Feature from '../../assets/images/features/img-3.png';
+import Img1 from '../../assets/images/testi-img/img-1.png';
+import Img2 from '../../assets/images/testi-img/img-2.png';
+import Img3 from '../../assets/images/testi-img/img-3.png';
+import Img4 from '../../assets/images/testi-img/img-4.png';
+import Client1 from '../../assets/images/clients/1.png';
+import Client2 from '../../assets/images/clients/2.png';
+import Client3 from '../../assets/images/clients/3.png';
+import Client4 from '../../assets/images/clients/4.png';
+import CountUp from 'react-countup';
+import Card from 'react-bootstrap/Card' ; 
+ 
+
+
 
 
 
 const Content = () => {
       return (
         <React.Fragment>
-        <section className="section" id="contact">
+          <section className="section bg-services" id="services">
           <Container>
-          <Row> <Col lg={12}> <div className="title-box text-left"> <h3 className="title-heading mt-4">
-          Problem</h3> <p className="text-muted f-17 mt-3">
+            <Row className="align-items-center mt-5 pt-4" id="counter">
+              <Col lg={6}>
+                <div className="pr-4 mt-4">
+                  
+                  <h3>INTERNKHOJ</h3>
+                  
+                  <p className="text-uppercase"><div > 
+                  <Badge color="success" style={{fontSize: '17px', marginRight: '10px'}}>Education</Badge>
+                  <Badge color="success" style={{fontSize: '17px', marginRight: '10px'}}>Internship</Badge>
+                      </div>
+                      
+                      </p>
+                  <p className="text-muted mt-3">For Users - TELO is an app that allows you to search, discover, register, set-reminders, train for, participate in fitness/running events around you and share achievements with friends & family; For Brands - TELO is a platform to sponsor, monitor, market and derive user reports for their marketing.
+</p>
+                  <div className="mt-4 pt-1">
+                    <Link to="#" className="btn btn-outline-primary">INVEST</Link>
+                  </div>
+                </div>
+              </Col>
+              <Col lg={5} className="offset-lg-1" style={{border: '1px red', padding: '10px'}}>
+              
+                <ReactPlayer width = "100%" height = "300px" 
+                controls = "true" url="https://www.youtube.com/watch?v=UVCP4bKy9Iw"
+                />
+                
+              </Col>
+            </Row>
+            
+          </Container>
+        </section>
+        <section className="section bg-light bg-cta">
+          <Container>
+            <Row className="justify-content-center">
+              <Col lg={9}>
+                <div className="text-center">
+                  <h2>Market Overview <span className="text-primary"> - Documents</span></h2>
+                  <p className="text-muted mt-3">A due diligence report is a document prepped by an independent third party due diligence team which includes information related to financials, compliance, key risks and a lot more.</p>
+                  <div className="mt-4 pt-2">
+                    <Link to="/Invest" className="btn btn-soft-primary btn-round mr-3 btn-rounded">Read More</Link>
+                    <Link to="#" className="btn btn-primary btn-round btn-rounded"> DOWNLOAD </Link>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        
+        <section className="section" id="clients">
+          <Container>
+            <Row>
+              <Col lg={12}>
+                <div className="title-box text-center">
+                  <h3 className="title-heading mt-4">Key Features of Startup</h3>  
+                </div>
+              </Col>
+            </Row>
+            
+          </Container>
+        </section>
+
+
+        <section className="section" id="contact">
+        <Container>
+            <Row>
+              <Col lg={12}>
+                <div className="title-box text-center">
+                  <h3 className="title-heading mt-4">Pitch Deck</h3>  
+                </div>
+              </Col>
+            </Row>
+            
+          </Container>
+          <Container>
+          <Row> <Col lg={12}> <div className="title-box text-left"> 
+          <h3 className="title-heading mt-4">Problem</h3> 
+          <p className="text-muted f-17 mt-3">
           Let us all agree on this, Fitness can be BORING! 
  
 

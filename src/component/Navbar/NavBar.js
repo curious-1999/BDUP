@@ -75,7 +75,7 @@ class NavbarPage extends Component {
                     >
                       <NavLink
                         className={item.navheading === "Home" ? "active" : ""}
-                        href={"#" + item.idnm}
+                        href={"/" + item.idnm}
                       >
                         {item.navheading}
                       </NavLink>
@@ -95,7 +95,7 @@ class NavbarPage extends Component {
                     <Link to="/Match" className="nav-link">Match</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Invest" className="nav-link">Invest</Link>
+                    <Link to="/Deals" className="nav-link">Invest</Link>
                   </li>
                 
                   <li className="nav-item">

@@ -6,7 +6,13 @@ import Navbar from '../component/Navbar/NavBar'
 import Footer from '../component/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../src/styles.scss';
-import Privacy from "../component/Privacy";
+import details from "./Startups/Details";
+
+
+
+
+
+
 
 class Deal extends Component {
   constructor(props) {

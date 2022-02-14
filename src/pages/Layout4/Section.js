@@ -82,7 +82,7 @@ class Section extends Component {
                         <p className="text-white-50 mt-4 f-20">{item.desc}</p>
                         <div className="mt-5">
                           <div className="mt-4 pt-2">
-                            <Link to="/Invst/Form" className="btn btn-primary btn-rounded mr-3">{item.butn}</Link>
+                            <Link to="#" className="btn btn-primary btn-rounded mr-3">{item.butn}</Link>
                           </div>
                         </div>
                       </div>

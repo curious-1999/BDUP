@@ -87,9 +87,11 @@ export default class Services extends Component {
           <Row>
               <Col lg="12">
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4"></h3>
-                  <p className="text-muted f-17 mt-3">FIND YOUR PERFECT CO-FOUNDER. IT’S THAT EASY!<br /> WANT TO INVEST IN YOUR FAVORITE STARTUP? KEEP SCROLLING!
-</p>
+                  <h3 className="title-heading mt-4">WANT TO INVEST IN YOUR FAVORITE STARTUP? 
+                  <br/>KEEP SCROLLING !</h3>
+                  {/* <p className="text-muted f-17 mt-3">
+                    WANT TO INVEST IN YOUR FAVORITE STARTUP? KEEP SCROLLING !
+                    </p> */}
 
                   <img src={HomeUrl} height="15" className="mt-3" alt="" />
                 </div>
@@ -101,11 +103,11 @@ export default class Services extends Component {
                 <div className="pr-4 mt-4">
                   <p className="text-uppercase">About BizDateUp</p>
                   <h3>Two Perspective, One spot!</h3>
-                  <p className="text-muted mt-3">Bizateup is a  dating platform that enables startup Founders to find and match with potential Co-Founders. Bizdateup ets you Startups to raise funds through Public rounds and also lets users invest in their favorite startups.
+                  <p className="text-muted mt-3">Bizateup is a Dating platform that enables startup Founders to find and match with potential Co-Founders. Bizdateup ets you Startups to raise funds through Public rounds and also lets users invest in their favorite startups.
 Apart from that, BizDateUp offers services to boost a startup's growth exponentially. To name a few, these services include Mentorship sessions, Legal solutions, Pitch Deck, Website Development, etc.
 </p>
                   <div className="mt-4 pt-1">
-                    <Link to="#" className="btn btn-outline-primary">Read more</Link>
+                    <Link to="/Deals" className="btn btn-outline-primary">Read more</Link>
                   </div>
                 </div>
               </Col>
@@ -140,11 +142,6 @@ Apart from that, BizDateUp offers services to boost a startup's growth exponenti
 
                     <h5 className="mt-4">{item.title}</h5>
                     <p className="text-muted mt-3">{item.description}</p>
-
-                    {/* <div className="mt-3">
-                      <Link to="#" className="text-primary f-16">Learn More <i className="mdi mdi-arrow-right ml-1"></i></Link>
-                    </div> */}
-
                   </div>
                 </Col>
               ))}

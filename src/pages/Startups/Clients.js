@@ -7,13 +7,14 @@ import Img1 from '../../assets/images/testi-img/img-1.png';
 import Img2 from '../../assets/images/testi-img/img-2.png';
 import Img3 from '../../assets/images/testi-img/img-3.png';
 import Img4 from '../../assets/images/testi-img/img-4.png';
-
-import HomeUrl from '../../assets/images/home-border.png';
-
 import Client1 from '../../assets/images/clients/1.png';
 import Client2 from '../../assets/images/clients/2.png';
 import Client3 from '../../assets/images/clients/3.png';
 import Client4 from '../../assets/images/clients/4.png';
+
+import HomeUrl from '../../assets/images/home-border.png';
+
+
 
 export default class Clients extends Component {
   constructor(props) {
@@ -74,15 +75,11 @@ export default class Clients extends Component {
                 <img src={slideitem.img} className="img-fluid" alt="" />
               </div>
             </Col>
-            <Col lg={6}>
-              
+            <Col lg={6}> 
               <div className="client-box mt-4">
-                
-              <h5 className="line-height_1_6 text-danger">{slideitem.name}</h5>
+            <h5 className="line-height_1_6 text-danger">{slideitem.name}</h5>
               <p className="text-primary mb-0">- {slideitem.designation} </p>
-                <h3 className="f-18">{slideitem.description} </h3>
-                
-                
+                <h3 className="f-18">{slideitem.description} </h3> 
               </div>
             </Col>
           </Row>
@@ -97,8 +94,7 @@ export default class Clients extends Component {
             <Row>
               <Col lg={12}>
                 <div className="title-box text-center">
-                  <h3 className="title-heading mt-4">Key Features of Startup</h3>
-                  
+                  <h3 className="title-heading mt-4">Key Features of Startup</h3>  
                 </div>
               </Col>
             </Row>
@@ -115,43 +111,6 @@ export default class Clients extends Component {
             </Row>
           </Container>
         </section>
-        {/* <section className="section bg-light bg-clients">
-          <Container>
-            <Row>
-              <Col lg={12}>
-                <div className="title-box text-center">
-                  <h3 className="title-heading mt-4">All Trusted Brands</h3>
-                  <p className="text-muted f-17 mt-3">Vivamus ac nulla ultrices laoreet neque mollis mi morbi
-                  elementum mauris
-                            sit amet arcu <br /> fringilla auctor In eleifend maximus nisi sed vulputate.</p>
-                  <img src={HomeUrl} height="15" className="mt-3" alt="" />
-                </div>
-              </Col>
-            </Row>
-            <Row className="mt-5 pt-4">
-              <Col lg={3}>
-                <div className="client-images mt-4">
-                  <img src={Client1} alt="logo-img" className="mx-auto img-fluid d-block" />
-                </div>
-              </Col>
-              <Col lg={3}>
-                <div className="client-images mt-4">
-                  <img src={Client2} alt="logo-img" className="mx-auto img-fluid d-block" />
-                </div>
-              </Col>
-              <Col lg={3}>
-                <div className="client-images mt-4">
-                  <img src={Client3} alt="logo-img" className="mx-auto img-fluid d-block" />
-                </div>
-              </Col>
-              <Col lg={3}>
-                <div className="client-images mt-4">
-                  <img src={Client4} alt="logo-img" className="mx-auto img-fluid d-block" />
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </section> */}
       </React.Fragment>
     );
   }

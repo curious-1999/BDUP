@@ -995,7 +995,7 @@ p {
 .bg-home {
   position: relative;
   /* padding: 100px 0px 100px 0px; */
-  border-radius: 0px 0px 0px 450px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 .home-badge p {

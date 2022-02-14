@@ -16,15 +16,16 @@ export default class Deals extends Component {
       pricing: [
         {
           id: 1,
-          title: "Startup 1",
+          title: "InternKhoj",
           img: img,
           description: 'Semper urna veal tempus pharetra elit habisse platea dictumst.',
           icon: 'mdi-account',
           titlePrimary: false,
           percentageRaised: '$9.99',
           tag: [
-            "fintech","blockchain"
+            "Education","Internship"
           ],
+          page: "/Internkhoj"
         },
         {
           id: 2,
@@ -48,7 +49,9 @@ export default class Deals extends Component {
           percentageRaised: '20', 
           tag: [
             "fintech","blockchain",
+            
           ],
+          page: "/Internkhoj"
         },
         {
             id: 4,
@@ -121,7 +124,7 @@ export default class Deals extends Component {
                       )}
                       <h1></h1>
                       </div>
-                      <Button variant="outline-primary">Read more</Button>
+                      <Button href='{item.page}' variant="outline-primary">Read more</Button>
                     </Card.Body>
                   </Card>
                 </Col>
