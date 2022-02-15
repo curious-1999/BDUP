@@ -89,7 +89,9 @@ export default class Pricing extends Component {
                       )}
                       <h1></h1>
                       </div>
-                      <Button  variant="outline-primary">Read more</Button>
+                      <Link to={`/Deals`} className="btn-block">
+                      <Button variant="outline-primary">Read more</Button>
+                      </Link>
                     </Card.Body>
                   </Card>
                 </Col>

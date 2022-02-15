@@ -35,7 +35,7 @@ const routes = [
   { path: "/Terms", component: Terms },
   { path: "/Deals", component: Deal},
   { path: "/Internkhoj", component: Startups},
-  { path: "/Content", component: Startups},
+  { path: "/startup/:id", component: Startups},
   { path: "/", component: Layout1 },
 ];
 

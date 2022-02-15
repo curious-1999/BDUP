@@ -12,11 +12,11 @@ import Clients from "./Clients";
 import Footer from "../../component/Footer/Footer";
 import details from "./Details";
 
-const Content = () => {
-  const ID = 1;
+const Content = (props) => {
+  // const ID = '1';
   const startup = details.find(
     (st) => (
-      st.id === ID
+      st.id === props.id
       )
   )
   return (
@@ -189,54 +189,12 @@ Exit
 }
 
 
-class Startups extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      navItems: [
-        // { id: 1, idnm: "home", navheading: "Home" },
-        // { id: 3, idnm: "services", navheading: "Services" },
-        // { id: 4, idnm: "pricing", navheading: "Pricing" },
-        // { id: 5, idnm: "team", navheading: "Team" },
-        // { id: 6, idnm: "clients", navheading: "Clients" },
-        // { id: 7, idnm: "contact", navheading: "Contact" },
-      ],
-      pos: document.documentElement.scrollTop,
-      imglight: false,
-      navClass: "",
-      fixTop : true
-    };
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.scrollNavigation, true);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.scrollNavigation, true);
-  }
-
-  scrollNavigation = () => {
-    var scrollup = document.documentElement.scrollTop;
-    if (scrollup > this.state.pos) {
-      this.setState({ navClass: "nav-sticky", imglight: false });
-    } else {
-      this.setState({ navClass: "", imglight: false });
-    }
-  };
-
-  render() {
+const Startups = ({match}) => {
+    
     return (
       <React.Fragment>
           {/* Importing Navbar */}
-          <Navbar
-            navItems={this.state.navItems}
-            navClass={this.state.navClass}
-            imglight={this.state.imglight}
-            top={this.state.fixTop}
-          />
-
-          <Content />
+          <Content id={match.params.id} />
 
           {/* Importing Clients */}
           <Clients />
@@ -247,5 +205,4 @@ class Startups extends Component {
       </React.Fragment>
     );
   }
-}
 export default Startups;
