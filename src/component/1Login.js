@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Form, Button } from 'react-bootstrap';
 import axios from 'axios';
 import { BASE_API_URL } from '../utils/constants';
-
+import { UserContext } from '../App';
 const Login = () => {
+  const {state, dispatch} = useContext(UserContext);
+
   const { register, handleSubmit, errors } = useForm();
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -15,6 +17,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(`${BASE_API_URL}/login`, data);
+      dispatch({type:"user", payload:true});
       setSuccessMessage('User with the provided credentials found.');
       setErrorMessage('');
       setUserDetails(response.data);
@@ -32,7 +35,7 @@ const Login = () => {
       <div className="col-md-6 offset-md-3">
         {errorMessage ? (
           <p className="errorMsg login-error">{errorMessage}</p>
-        ) : (
+        ) :  (
           <div>
             <p className="successMsg">{successMessage}</p>
 
