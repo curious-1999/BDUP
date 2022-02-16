@@ -1,7 +1,7 @@
 
 import React, { Component } from "react";
 // import ReactDOM from 'react-dom';
-import Deals from "../component/deals";
+import Deals from "../component/dealsx";
 import Navbar from '../component/Navbar/NavBar'
 import Footer from '../component/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
