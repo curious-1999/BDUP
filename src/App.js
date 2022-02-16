@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, createContext, useReducer } from "react";
 import routes from "../src/routes";
 // import Routes from "../src/routes";
 // import routes2 from "../src/routes2";
@@ -8,15 +8,23 @@ import {
   Switch,
   BrowserRouter as Router,
 } from "react-router-dom";
-
 import "./assets/css/materialdesignicons.min.css";
 
 import "./assets/scss/themes.scss";
 
-class App extends Component {
-  render() {
+import { initialState, reducer } from "../src/reducer/usereducer";
+
+export const UserContext = createContext(); 
+
+  
+
+const App = () =>  {
+  
+    const [state, dispatch] = useReducer(reducer,initialState);
     return (
-      <React.Fragment>
+      <UserContext.Provider value={{state, dispatch}}>
+        {/* <usereducefun/> */}
+        <React.Fragment>
         <Router>
           <Switch>
             {routes.map((route, idx) => (
@@ -27,8 +35,9 @@ class App extends Component {
         </Router>
        {/* <Routes/>  */}
       </React.Fragment>
+      </UserContext.Provider>
     );
-  }
+  
 }
 
 export default withRouter(App);
