@@ -4,6 +4,8 @@ import { Form, Button } from 'react-bootstrap';
 import axios from 'axios';
 import { BASE_API_URL } from '../utils/constants';
 import { UserContext } from '../App';
+import { useHistory } from 'react-router-dom';
+import Deal from "../pages/Deals";
 const Login = () => {
   const {state, dispatch} = useContext(UserContext);
 
@@ -11,13 +13,14 @@ const Login = () => {
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [userDetails, setUserDetails] = useState('');
-
+  let history =  useHistory();
   const onSubmit = async (data) => {
     console.log(data);
 
     try {
       const response = await axios.post(`${BASE_API_URL}/login`, data);
       dispatch({type:"user", payload:true});
+      history.push('/Deals')
       setSuccessMessage('User with the provided credentials found.');
       setErrorMessage('');
       setUserDetails(response.data);
@@ -38,7 +41,7 @@ const Login = () => {
         ) :  (
           <div>
             <p className="successMsg">{successMessage}</p>
-
+            {/* {history.push('/Deals')} */}
             {/* {userDetails && (
               <div className="user-details">
                 <p>Following are the user details:</p>
