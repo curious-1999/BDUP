@@ -49,7 +49,8 @@ export default class Deals extends Component {
                       )}
                       <h1></h1>
                       </div>
-                      <Button href={`/startup/${item.id}`} variant="outline-primary">Read more</Button>
+                      {/* <Button href={`/startup/${item.id}`} variant="outline-primary">Read more</Button> */}
+                      <Link to="/Login" className="btn btn-sm btn-soft-primary btn-round">Login</Link>
                     </Card.Body>
                   </Card>
                 </Col>
