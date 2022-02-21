@@ -20,6 +20,11 @@ const details = [
           "fintech","blockchain",     
         ],
         youtubelink: "https://youtu.be/UVCP4bKy9Iw",
+         icon: 'mdi-account-group',
+        icon2: 'mdi-lightbulb-on',
+        icon3: 'mdi-email-lock',
+        green: 'mdi-checkbox-marked-circle',
+        due: 'mdi-file-download',
 
 
 
@@ -101,8 +106,10 @@ const details = [
         link: "www.internkhoj.com",
 
         // fundamentals
+        
+        minimuminvest: '5000',
+        valuation: '57846666',
         target: '57846666',
-        minimumamt: '5000',
         socials: [
             "fjebof", 'efheofuhne'
         ],

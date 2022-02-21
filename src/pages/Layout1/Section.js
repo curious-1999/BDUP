@@ -54,9 +54,9 @@ class Section extends Component {
               </Container>
             </div>
             <ModalVideo
-              channel="vimeo"
+              channel="youtube"
               isOpen={this.state.isOpen}
-              videoId="99025203"
+              videoId="CZiJ8be4x4k"
               onClose={() => this.setState({ isOpen: false })}
             />
           </div>

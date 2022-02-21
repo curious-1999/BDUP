@@ -39,7 +39,27 @@ const Content = (props) => {
                 {startup.description}
 </p>
               <div className="mt-4 pt-1">
-                <Link to="" className="btn btn-outline-primary">INVEST</Link>
+                <div className="team-social mt-4 pt-2">
+                  <ul className="list-inline mb-0">
+                    <li className="list-inline-item">
+                    <Link to="" className="btn btn-outline-primary" style={{fontSize: '17px', marginRight: '10px'}}>INVEST</Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link to="#" className="text-reset"><i className="mdi mdi-facebook"></i></Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link to="#" className="text-reset"><i className="mdi mdi-twitter"></i></Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link to="#" className="text-reset"><i className="mdi mdi-google"></i></Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link to="#" className="text-reset"><i className="mdi mdi-pinterest"></i></Link>
+                    </li>
+                  </ul>
+                </div> 
+             
+             
               </div>
             </div>
           </Col>
@@ -54,43 +74,132 @@ const Content = (props) => {
         
       </Container>
     </section>
-    <section className="section bg-light bg-cta">
-      <Container>
-        <Row className="justify-content-center">
-          <Col lg={9}>
-            <div className="text-center">
-              <h2>Market Overview <span className="text-primary"> - Documents</span></h2>
-              <p className="text-muted mt-3">A due diligence report is a document prepped by an independent third party due diligence team which includes information related to financials, compliance, key risks and a lot more.</p>
-              <div className="mt-4 pt-2">
-                <Link to="/Invest" className="btn btn-soft-primary btn-round mr-3 btn-rounded">Read More</Link>
-                <Link to="#" className="btn btn-primary btn-round btn-rounded">{startup.duediligence}</Link>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+   
 
-    <div className="title-box text-center"> <h3 className="title-heading mt-4">
-{startup.foundername}
+<section className="section" id="pricing">
+<Container>
+<Row className="mt-5 pt-4">
+             
+<Col lg="4" >
+                  <div className="pricing-box mt-4">
+
+                  <i className={"h1 mdi " + startup.icon}></i>
+                   
+                      <h4 className="f-20 text-primary">Team</h4>
+                      <p className="mb-2 f-18">Founder</p>
+                      
+                      <h4 className="f-20">{startup.foundername}</h4>
+                      <p className="mb-2 f-18">Hie I am the founder of the website and Internkhoj is the website</p>
+                      <p className="mb-2 f-18">Founder</p>
+                      
+                      <h4 className="f-20">{startup.foundername}</h4>
+                      <p className="mb-2 f-18">Hie I am the founder of the website and Internkhoj is the website</p>
+                      
+                    
+                    
+                   
+                    
+                    <div className="team-social mt-4 pt-2">
+                  <ul className="list-inline mb-0">
+                    <li className="list-inline-item">
+                      <Link to="#" className="text-reset"><i className="mdi mdi-facebook"></i></Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link to="#" className="text-reset"><i className="mdi mdi-twitter"></i></Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link to="#" className="text-reset"><i className="mdi mdi-google"></i></Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link to="#" className="text-reset"><i className="mdi mdi-pinterest"></i></Link>
+                    </li>
+                  </ul>
+                </div>
+                    {/* <div className="mt-4 pt-3">
+                      <Link to="#" className="btn btn-primary btn-rounded">Purchase Now</Link>
+                    </div> */}
+                  </div>
+                </Col><Col lg="4" >
+                  <div className="pricing-box mt-4">
+
+                  <i className={"h1 mdi " + startup.icon2}></i>
+                   
+                      <h4 className="f-20 text-primary">Highlights / Key Features</h4>
+                      <p className="mb-2 f-18"></p>
+                      
+                      {/* <h4 className="f-20">efefefef</h4> */}
+                      
+                      <div className="mt-4 pt-2">
+                        <p className="mb-2"><i
+                          className={"mdi " + startup.green + " f-18 mr-2"}></i><b>{startup.keyfeature1}</b></p> 
+                          <p className="mb-2"><i
+                          className={"mdi " + startup.green + " f-18 mr-2"}></i><b>{startup.keyfeature2}</b></p>
+                          <p className="mb-2"><i
+                          className={"mdi " + startup.green + " f-18 mr-2"}></i><b>{startup.keyfeature3}</b></p>
+                          
+                    </div>
+                    
+                    
+                    
+                    
+                    <div className="pricing-plan mt-4 pt-2">
+                    <p className="f-18 mr-2 text-muted">Min Investment<p className="f-18 mr-2"><b>{startup.minimuminvest}</b></p></p>
+                    <p className="f-18 mr-2 text-muted">Valuation<p className="mb-2"><b>{startup.valuation
+                    }</b></p></p>
+                      <p className="f-18 mr-2 text-muted">Target<p className="mb-2"><b>{startup.target}</b></p></p>
 
 
-</h3>
-</div>
-    
-    <section className="section" id="clients">
-      <Container>
-        <Row>
-          <Col lg={12}>
-            <div className="title-box text-center">
-              <h3 className="title-heading mt-4">Key Features of Startup</h3>  
-            </div>
-          </Col>
-        </Row>
-        
-      </Container>
-    </section>
+                    </div>
+                   
+                  </div>
+                </Col>
+                <Col lg="4" >
+                  
+                  <div className="pricing-box mt-4">
+                  <div className="pricing-badge"><span className="badge">Important</span> </div>
+                  <i className={"h1 mdi " + startup.icon3}></i>
+                   
+                      <h4 className="f-20 text-primary">Due Diligence</h4>
+                      <p className="mt-4 pt-2 text-muted">A due diligence report is a document prepped by an independent third party due diligence team which includes information related to financials, compliance, key risks and a lot more.
 
+
+                    </p>
+                      
+                    <div className="mt-4 pt-2">
+                        <p className="mb-2"><i
+                          className={"mdi " + startup.due + " f-18 mr-2"}></i> Company Due Dilligence</p> 
+                          <p className="mb-2"><i
+                          className={"mdi " + startup.due + " f-18 mr-2"}></i> Company Certificates</p>
+                          
+                          
+                    </div>
+                    
+                    
+                    
+                    <div className="mt-4 pt-3">
+                      <Link to="#" className="btn btn-primary btn-rounded">Download</Link>
+                    </div>
+                  </div>
+                </Col>
+           </Row>
+            </Container>
+            </section>
+
+<Container>
+            <Badge href='/startuproblem' color="info" style={{fontSize: '17px', marginRight: '10px'}}>Problem</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Solution</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Product</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Traction</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Customers</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Business Model</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Competition</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Usage of funds</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Vision</Badge>
+            <Badge color="info" style={{fontSize: '17px', marginRight: '10px'}}>Exit</Badge>
+   
+   </Container>        
+            
+     
 
     <section className="section" id="contact">
     <Container>
@@ -105,7 +214,7 @@ const Content = (props) => {
       </Container>
       <Container>
       <Row> <Col lg={12}> <div className="title-box text-left"> 
-      <h3 className="title-heading mt-4">Problem</h3> 
+      <h3 className="title-heading mt-4" id='startuproblem'>Problem</h3> 
       <p className="text-muted f-17 mt-3">
       
       {startup.problem}
@@ -189,13 +298,13 @@ Exit
 }
 
 
+
 const Startups = ({match}) => {
     
     return (
       <React.Fragment>
           {/* Importing Navbar */}
           <Content id={match.params.id} />
-
           {/* Importing Clients */}
           <Clients />
 
