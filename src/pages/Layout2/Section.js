@@ -59,9 +59,9 @@ But BizDateUp is more than just a business-centric social platform. At the heart
                 </Row>
               </Container>
               <ModalVideo
-                channel="vimeo"
+                channel="youtube"
                 isOpen={this.state.isOpen}
-                videoId="99025203"
+                videoId="NtXK5ZgQ54w"
                 onClose={() => this.setState({ isOpen: false })}
               />
             </div>

@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap');
 
 
-$primary:   #a5851e;
+$primary:   #202054;
 $success:   #5f5e1a50;
 $info:      #15b2ec;
 $warning:   #f5a416;
@@ -15,7 +15,7 @@ $purple:    #9261c6;
 $pink:      #f12699;
 $white:     #ffffff;
 $dark:      #1e3547;
-$light:     #f0f9fa;
+$light:     #ffffff;
 $muted:     #828f99;
 
 // stylelint-disable
@@ -44,7 +44,7 @@ $colors: (
     "light": $light
 );
 // Body Background
-$body-bg:                   #f5f5f5;
+$body-bg:                   #ffffff;
 $box-shadow:                0px 5px 30px -10px rgba(0, 0, 0, 0.1);
 $box-shadow-lg:             0px 8px 48.75px 16.25px rgba(197, 203, 214, 0.45);
 

@@ -27,7 +27,7 @@ export default class Contact extends Component {
           id: 2,
           img: Img2,
           name: 'Raise Funds',
-          description: 'Get your funds through BizDateUp. Convert your community into capital and get funded'
+          description: 'Get your funds through BizDateUp. Convert your community into capital and get funded through our investors.'
         },
       ],
     };
@@ -48,9 +48,9 @@ export default class Contact extends Component {
       return (
         <div className="team-box p-3" key={teamindex}>
           <Row className="align-items-center">
-            <Col lg={13} style={{backgroundColor: "#f0f9fa", padding: "10px", margin:"20px" }}>
+            <Col lg={13} style={{backgroundColor: "#202054", padding: "10px", margin:"20px" }}>
               <div className="mt-4" style={{textAlign: "center" }}>
-                <h5 className="mt-2">{team.name}</h5>
+                <h5 className="mt-2" style={{color:'#ffffff'}}>{team.name}</h5>
                 <p className="text-muted mt-3">{team.description}</p>
                 <div className="team-social mt-4 pt-2">
                   <ul className="list-inline mb-0">

@@ -34,7 +34,7 @@ class Section extends Component {
                     <div className="home-content">
                       <p className="mb-0">Investing & Fund Raising</p>
                       <img src={HomeUrl} height="15" alt="Bizdateup Logo png" />
-                      <h1 className="home-title mt-4"> Invest in your<br/> favorite Startups <br/>& Fund Raising</h1>
+                      <h1 className="home-title mt-4" style={{textAlign: 'left'}}> Invest in your<br/> favorite Startups <br/>& Fund Raising</h1>
                       <p className="text-muted mt-4 f-20">Start investing now so that you can be part of <br/>the Next Big thing.</p>
                       <div className="mt-4 pt-2">
                         <Link to="/Deals" className="btn btn-primary mr-3">Invest Now</Link>{" "}
